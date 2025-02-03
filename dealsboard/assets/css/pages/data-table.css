@@ -1,0 +1,38 @@
+﻿#example23_wrapper .dt-buttons {display:inline-block;padding-top: 5px;margin-bottom: 15px;position: absolute;left:20px;top: 40px; right: }
+.dataTables_filter {
+    float: right;
+    margin-top: 0px!important;
+}
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled{background:#d7d9f9!important}
+
+.table th:first-child:after{display:none}
+#example23_wrapper .dt-buttons .dt-button {
+padding: 5px 15px;
+border-radius: 100px;
+color:#797989!important;
+margin-right: 3px;
+font-size: 14px;
+}
+.dataTables_wrapper{padding-top:0!important}
+#example23_wrapper .dt-buttons .dt-button {background:#fff!important;border:solid 1px #d5d7da!important;border-radius:0!important;margin-right:-1px!important; font-size:13px!important; padding: 5px 10px;}
+#example23_wrapper .dt-buttons .dt-button:hover {background:#0642b8!important;border:solid 1px #d5d7da!important; color:#fff!important}
+
+.table thead th, .table th{color:#000; font-weight:500!important; cursor:pointer
+}
+#example23_wrapper .dataTables_wrapper thead { padding-top:0!important; background:#0642b8; color:#000;}
+table.dataTable thead .sorting:after {color:#000000!important}   
+
+#myTable thead {  padding-top:0!important; background:#0642b8; color:#fff;}
+#mainTable thead {  padding-top:0!important; background:#0642b8; color:#fff;}
+
+#example23 thead  { padding-top:0!important; background:#0642b8; color:#fff;}
+.jsgrid-table tr th {background:#0642b8; color:#fff;}
+
+#example23 .dataTables_length  {display:none!important}
+#example23 #editable-datatable_filter {display:none!important}
+
+
+#example23 .dataTables_length  {display:none!important}
+#example23 #editable-datatable_filter {display:none!important}
+
+.card-body h3 { display:inline-block}

@@ -1,0 +1,52 @@
+[06-Mar-2024 09:11:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[05-Apr-2024 23:30:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[01-Jul-2024 21:31:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[01-Jul-2024 21:33:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[01-Jul-2024 21:35:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[01-Jul-2024 21:36:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[27-Aug-2024 17:09:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[08-Sep-2024 09:05:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[11-Sep-2024 16:54:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[19-Sep-2024 09:29:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[14-Nov-2024 14:07:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[16-Dec-2024 18:40:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85
+[20-Jan-2025 02:59:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/config.php on line 85

@@ -1,0 +1,163 @@
+[06-Mar-2024 00:14:33 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[06-Mar-2024 00:14:33 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[06-Mar-2024 00:14:33 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[06-Mar-2024 00:14:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[09-Mar-2024 08:21:34 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[09-Mar-2024 08:21:34 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[09-Mar-2024 08:21:34 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[09-Mar-2024 08:21:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[12-Mar-2024 14:56:20 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[12-Mar-2024 14:56:20 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[12-Mar-2024 14:56:20 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[12-Mar-2024 14:56:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[21-Mar-2024 13:25:23 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[21-Mar-2024 13:25:23 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[21-Mar-2024 13:25:23 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[21-Mar-2024 13:25:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[22-Mar-2024 18:58:04 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[22-Mar-2024 18:58:04 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[22-Mar-2024 18:58:04 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[22-Mar-2024 18:58:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[30-Mar-2024 23:03:14 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[30-Mar-2024 23:03:14 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[30-Mar-2024 23:03:14 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[30-Mar-2024 23:03:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[30-May-2024 17:21:27 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[30-May-2024 17:21:27 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[30-May-2024 17:21:27 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[30-May-2024 17:21:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[28-Jun-2024 12:18:06 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[28-Jun-2024 12:18:06 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[28-Jun-2024 12:18:06 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[28-Jun-2024 12:18:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[01-Jul-2024 21:27:28 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[01-Jul-2024 21:27:28 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[01-Jul-2024 21:27:28 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[01-Jul-2024 21:27:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[01-Jul-2024 21:34:07 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[01-Jul-2024 21:34:07 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[01-Jul-2024 21:34:07 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[01-Jul-2024 21:34:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[23-Aug-2024 12:51:08 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[23-Aug-2024 12:51:08 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[23-Aug-2024 12:51:08 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[23-Aug-2024 12:51:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[05-Oct-2024 01:01:00 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[05-Oct-2024 01:01:00 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[05-Oct-2024 01:01:00 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[05-Oct-2024 01:01:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[19-Nov-2024 13:47:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/FolderHandler.php(132): CKFinder_Connector_Core_Config->getResourceTypeConfig('Images')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/FolderHandler.php(175): CKFinder_Connector_Core_FolderHandler->getResourceTypeConfig()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/QuickUpload.php(46): CKFinder_Connector_Core_FolderHandler->getUrl()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(78): CKFinder_Connector_CommandHandler_QuickUpload->sendResponse()
+#4 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('QuickUpload')
+#5 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[27-Nov-2024 01:51:31 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[27-Nov-2024 01:51:31 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[27-Nov-2024 01:51:31 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[27-Nov-2024 01:51:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402
+[29-Dec-2024 10:11:07 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[29-Dec-2024 10:11:07 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[29-Dec-2024 10:11:07 UTC] PHP Warning:  A non-numeric value encountered in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Utils/Misc.php on line 187
+[29-Dec-2024 10:11:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php:402
+Stack trace:
+#0 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/Init.php(141): CKFinder_Connector_Core_Config->getResourceTypeConfig('Files')
+#1 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/CommandHandler/XmlCommandHandlerBase.php(82): CKFinder_Connector_CommandHandler_Init->buildXml()
+#2 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Connector.php(100): CKFinder_Connector_CommandHandler_XmlCommandHandlerBase->sendResponse()
+#3 /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/connector.php(100): CKFinder_Connector_Core_Connector->executeCommand('Init')
+#4 {main}
+  thrown in /home/cleardealsconi/public_html/cms_js/editor/ckfinder/core/connector/php/php5/Core/Config.php on line 402

@@ -1,0 +1,472 @@
+[17-Oct-2024 20:58:55 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-3.php:287
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-3.php on line 287
+[22-Oct-2024 05:18:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PREFIX" in /home/cleardealsconi/public_html/module/property-valuation4-oct.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation4-oct.php on line 9
+[22-Oct-2024 05:30:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PREFIX" in /home/cleardealsconi/public_html/module/property-valuation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation.php on line 9
+[22-Oct-2024 05:30:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PREFIX" in /home/cleardealsconi/public_html/module/property-valuation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation.php on line 9
+[22-Oct-2024 05:30:58 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PREFIX" in /home/cleardealsconi/public_html/module/property-valuation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation.php on line 9
+[29-Oct-2024 05:11:26 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/dashboard.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/dashboard.php on line 1
+[29-Oct-2024 05:11:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/my-account.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/my-account.php on line 1
+[29-Oct-2024 05:12:06 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/user-detail.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/user-detail.php on line 4
+[29-Oct-2024 05:12:22 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/user-detail.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/user-detail.php on line 4
+[29-Oct-2024 05:13:20 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/home.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/home.php on line 2
+[04-Nov-2024 04:35:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/dashboard.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/dashboard.php on line 1
+[09-Nov-2024 18:32:02 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/one-time-offer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/one-time-offer.php on line 25
+[10-Nov-2024 21:46:33 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/make-payment.php:108
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/make-payment.php on line 108
+[12-Nov-2024 08:29:05 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-old.php:260
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-old.php on line 260
+[17-Nov-2024 16:11:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PREFIX" in /home/cleardealsconi/public_html/module/property-valuation4-oct.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation4-oct.php on line 9
+[17-Nov-2024 16:28:04 UTC] PHP Warning:  Undefined variable $dbObj in /home/cleardealsconi/public_html/module/property-valuation23.php on line 2
+[17-Nov-2024 16:28:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function sc_mysql_escape() on null in /home/cleardealsconi/public_html/module/property-valuation23.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation23.php on line 2
+[17-Nov-2024 21:37:04 UTC] PHP Warning:  Undefined variable $dbObj in /home/cleardealsconi/public_html/module/property-valuation-old.php on line 2
+[17-Nov-2024 21:37:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function sc_mysql_escape() on null in /home/cleardealsconi/public_html/module/property-valuation-old.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation-old.php on line 2
+[20-Nov-2024 07:47:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PREFIX" in /home/cleardealsconi/public_html/module/property-valuation4-oct.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation4-oct.php on line 9
+[20-Nov-2024 08:19:31 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PREFIX" in /home/cleardealsconi/public_html/module/property-valuation4-oct.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation4-oct.php on line 9
+[20-Nov-2024 08:43:11 UTC] PHP Warning:  Undefined variable $dbObj in /home/cleardealsconi/public_html/module/property-valuation23.php on line 2
+[20-Nov-2024 08:43:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function sc_mysql_escape() on null in /home/cleardealsconi/public_html/module/property-valuation23.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation23.php on line 2
+[20-Nov-2024 12:51:23 UTC] PHP Warning:  Undefined variable $dbObj in /home/cleardealsconi/public_html/module/property-valuation-old.php on line 2
+[20-Nov-2024 12:51:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function sc_mysql_escape() on null in /home/cleardealsconi/public_html/module/property-valuation-old.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-valuation-old.php on line 2
+[21-Nov-2024 09:47:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/my-account.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/my-account.php on line 1
+[21-Nov-2024 09:47:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/billing-invoice.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/billing-invoice.php on line 1
+[23-Nov-2024 03:07:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/one-time-offer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/one-time-offer.php on line 25
+[23-Nov-2024 21:13:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/one-time-offer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/one-time-offer.php on line 25
+[23-Nov-2024 21:35:28 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/one-time-offer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/one-time-offer.php on line 25
+[24-Nov-2024 16:22:01 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/make-payment.php:108
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/make-payment.php on line 108
+[24-Nov-2024 22:47:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/make-payment.php:108
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/make-payment.php on line 108
+[29-Dec-2024 15:32:16 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-3.php:287
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-3.php on line 287
+[31-Dec-2024 11:24:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-old.php:260
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-old.php on line 260
+[31-Dec-2024 11:24:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-old.php:260
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-old.php on line 260
+[31-Dec-2024 11:24:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-old.php:260
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-old.php on line 260
+[31-Dec-2024 13:04:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-old.php:260
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-old.php on line 260
+[31-Dec-2024 13:04:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-old.php:260
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-old.php on line 260
+[31-Dec-2024 13:04:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-old.php:260
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-old.php on line 260
+[31-Dec-2024 14:11:58 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-old.php:260
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-old.php on line 260
+[31-Dec-2024 14:11:58 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-old.php:260
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-old.php on line 260
+[31-Dec-2024 14:11:59 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-listing-old.php:260
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-listing-old.php on line 260
+[01-Jan-2025 22:26:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/about.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/about.php on line 2
+[01-Jan-2025 22:39:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/eligibility-detail.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/eligibility-detail.php on line 7
+[01-Jan-2025 22:47:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/commercial-property.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/commercial-property.php on line 2
+[01-Jan-2025 23:19:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/search-property-thumb.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/search-property-thumb.php on line 2
+[01-Jan-2025 23:52:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/billing-otp.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/billing-otp.php on line 1
+[02-Jan-2025 00:19:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-detail-1.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-detail-1.php on line 10
+[02-Jan-2025 00:35:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PREFIX" in /home/cleardealsconi/public_html/module/partner-detail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/partner-detail.php on line 2
+[02-Jan-2025 00:42:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/about.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/about.php on line 2
+[02-Jan-2025 00:50:52 UTC] PHP Warning:  Undefined variable $dbObj in /home/cleardealsconi/public_html/module/thank-you-for-valuation.php on line 2
+[02-Jan-2025 00:50:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function sc_mysql_escape() on null in /home/cleardealsconi/public_html/module/thank-you-for-valuation.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/thank-you-for-valuation.php on line 2
+[02-Jan-2025 00:53:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/recent-property.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/recent-property.php on line 1
+[02-Jan-2025 00:56:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/review-us-form.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/review-us-form.php on line 2
+[02-Jan-2025 00:59:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/properties-for-you.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/properties-for-you.php on line 1
+[02-Jan-2025 01:02:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/change-username.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/change-username.php on line 7
+[02-Jan-2025 01:05:55 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/sell-property.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/sell-property.php on line 35
+[02-Jan-2025 01:08:55 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/search-property-list.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/search-property-list.php on line 2
+[02-Jan-2025 01:17:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/enquiry-form.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/enquiry-form.php on line 2
+[02-Jan-2025 01:18:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/progress-report.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/progress-report.php on line 1
+[02-Jan-2025 01:18:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/thank-you.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/thank-you.php on line 2
+[02-Jan-2025 01:20:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/commercial-property-detail.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/commercial-property-detail.php on line 3
+[02-Jan-2025 01:23:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/ask-a-question.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/ask-a-question.php on line 2
+[02-Jan-2025 01:26:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/my-property.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/my-property.php on line 1
+[02-Jan-2025 01:27:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/properties-for-you.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/properties-for-you.php on line 1
+[02-Jan-2025 01:29:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/contact.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/contact.php on line 2
+[02-Jan-2025 01:31:52 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/media-detail.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/media-detail.php on line 11
+[02-Jan-2025 01:34:52 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/rent-commercial-property-list.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/rent-commercial-property-list.php on line 2
+[02-Jan-2025 01:49:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/search-rent-property-thumb.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/search-rent-property-thumb.php on line 2
+[02-Jan-2025 01:51:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/careers.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/careers.php on line 2
+[02-Jan-2025 02:12:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/my-property.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/my-property.php on line 1
+[02-Jan-2025 02:15:59 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/rent-commercial-property-detail.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/rent-commercial-property-detail.php on line 10
+[02-Jan-2025 03:12:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/billing-detail.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/billing-detail.php on line 3
+[02-Jan-2025 03:45:05 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/thankyou_review.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/thankyou_review.php on line 2
+[02-Jan-2025 04:11:06 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/sign-up.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/sign-up.php on line 7
+[02-Jan-2025 04:12:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/progress-report.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/progress-report.php on line 1
+[02-Jan-2025 05:09:16 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/thankyou-eligibilty.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/thankyou-eligibilty.php on line 2
+[02-Jan-2025 05:12:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/ask-a-question.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/ask-a-question.php on line 2
+[02-Jan-2025 05:15:18 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/billing-detail.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/billing-detail.php on line 3
+[02-Jan-2025 07:51:07 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/media.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/media.php on line 2
+[03-Jan-2025 22:20:30 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/about.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/about.php on line 2
+[03-Jan-2025 22:53:14 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/commercial-property.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/commercial-property.php on line 2
+[03-Jan-2025 23:26:27 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/search-property-thumb.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/search-property-thumb.php on line 2
+[04-Jan-2025 03:30:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/thankyou_review.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/thankyou_review.php on line 2
+[04-Jan-2025 03:49:07 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/rent-commercial-property-detail.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/rent-commercial-property-detail.php on line 10
+[04-Jan-2025 03:50:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/thank-you.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/thank-you.php on line 2
+[04-Jan-2025 03:51:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/billing-otp.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/billing-otp.php on line 1
+[04-Jan-2025 03:55:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/property-detail-1.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/property-detail-1.php on line 10
+[04-Jan-2025 04:03:09 UTC] PHP Warning:  Undefined variable $dbObj in /home/cleardealsconi/public_html/module/thank-you-for-valuation.php on line 2
+[04-Jan-2025 04:03:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function sc_mysql_escape() on null in /home/cleardealsconi/public_html/module/thank-you-for-valuation.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/thank-you-for-valuation.php on line 2
+[04-Jan-2025 04:05:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/careers.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/careers.php on line 2
+[04-Jan-2025 04:11:10 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/search-property-list.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/search-property-list.php on line 2
+[04-Jan-2025 04:23:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/change-username.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/change-username.php on line 7
+[04-Jan-2025 04:31:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/properties-for-you.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/properties-for-you.php on line 1
+[04-Jan-2025 04:39:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/review-us-form.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/review-us-form.php on line 2
+[04-Jan-2025 04:47:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/recent-property.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/recent-property.php on line 1
+[04-Jan-2025 04:59:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/enquiry-form.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/enquiry-form.php on line 2
+[04-Jan-2025 05:06:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/rent-commercial-property-list.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/rent-commercial-property-list.php on line 2
+[04-Jan-2025 05:14:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/my-property.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/my-property.php on line 1
+[04-Jan-2025 05:25:10 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/sign-up.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/sign-up.php on line 7
+[04-Jan-2025 05:26:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/contact.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/contact.php on line 2
+[04-Jan-2025 05:34:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/commercial-property-detail.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/commercial-property-detail.php on line 3
+[04-Jan-2025 05:42:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/ask-a-question.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/ask-a-question.php on line 2
+[04-Jan-2025 05:50:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/search-rent-property-thumb.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/search-rent-property-thumb.php on line 2
+[04-Jan-2025 07:14:14 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/progress-report.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/progress-report.php on line 1
+[04-Jan-2025 07:20:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/thankyou-eligibilty.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/thankyou-eligibilty.php on line 2
+[04-Jan-2025 09:38:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/media.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/media.php on line 2
+[04-Jan-2025 11:28:14 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/billing-detail.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/billing-detail.php on line 3
+[04-Jan-2025 11:48:27 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PREFIX" in /home/cleardealsconi/public_html/module/partner-detail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/partner-detail.php on line 2
+[05-Jan-2025 22:21:07 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/about.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/about.php on line 2
+[06-Jan-2025 03:29:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/thankyou_review.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/thankyou_review.php on line 2
+[07-Jan-2025 19:11:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/thankyou_review.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/thankyou_review.php on line 2
+[08-Jan-2025 01:11:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/change-username.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/change-username.php on line 7
+[10-Jan-2025 16:11:06 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTACCESS_URL" in /home/cleardealsconi/public_html/module/sell-property.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/sell-property.php on line 35
+[12-Jan-2025 14:50:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/forgot-password.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/forgot-password.php on line 7
+[13-Jan-2025 14:20:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/contact.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/contact.php on line 2
+[14-Jan-2025 14:22:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/forgot-password.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/forgot-password.php on line 7
+[16-Jan-2025 14:20:01 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/forgot-password.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/forgot-password.php on line 7
+[23-Jan-2025 15:56:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/pricing.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/pricing.php on line 2
+[23-Jan-2025 21:33:50 UTC] PHP Warning:  Undefined variable $dbObj in /home/cleardealsconi/public_html/module/payment.php on line 2
+[23-Jan-2025 21:33:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function sc_mysql_escape() on null in /home/cleardealsconi/public_html/module/payment.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/payment.php on line 2
+[25-Jan-2025 21:30:52 UTC] PHP Warning:  Undefined variable $dbObj in /home/cleardealsconi/public_html/module/payment.php on line 2
+[25-Jan-2025 21:30:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function sc_mysql_escape() on null in /home/cleardealsconi/public_html/module/payment.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/payment.php on line 2
+[25-Jan-2025 22:03:23 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "INCLUDE_DIR" in /home/cleardealsconi/public_html/module/pricing.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/cleardealsconi/public_html/module/pricing.php on line 2

@@ -1,0 +1,929 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+
+
+#remove PHPSESSID
+
+  
+
+</IfModule>
+
+RewriteBase /
+
+
+
+RewriteRule ^dealsboard/$ dealsboard/index.php [L]
+
+
+
+
+
+
+
+RewriteRule ^$ index.php?mo=home&id=1 [L]
+
+
+
+
+
+
+
+RewriteRule ^home/$ index.php?mo=home&id=1 [L]
+
+
+
+
+
+
+
+
+
+
+
+
+
+RewriteRule ^about/$ index.php?mo=about&id=2 [L]
+
+
+
+
+
+
+
+RewriteRule ^search-property-thumb/$ index.php?mo=search-property-thumb [L]
+
+
+
+
+
+
+
+RewriteRule ^search-property-thumb/([^/]*)/([^/]*)/$ index.php?mo=search-property-thumb&set=$1&page=$2 [L]
+
+
+
+
+
+
+
+RewriteRule ^search-property-thumb/([^/]*)/$ index.php?mo=search-property-thumb&sort=$1 [L]
+
+
+
+
+
+
+
+RewriteRule ^search-property-thumb/([^/]*)/([^/]*)/([^/]*)/$ index.php?mo=search-property-thumb&sort=$1&set=$2&page=$3 [L]
+
+
+
+
+
+
+
+RewriteRule ^pricing-details-for-sell-property/$ index.php?mo=pricing-details-for-sell-property&id=3 [L]
+
+
+
+
+
+
+
+RewriteRule ^pricing-details-for-rent-property/$ index.php?mo=pricing-details-for-rent-property&id=4 [L]
+
+
+
+
+
+
+
+RewriteRule ^blogs/$ index.php?mo=blogs&id=6 [L]
+
+
+
+
+
+
+
+RewriteRule ^blogs/([^/]*[^/]*)/$ index.php?mo=blogs&page=$1 [L] 
+
+
+
+	
+
+
+
+RewriteRule ^blogs/category/([^/]*)/$ index.php?mo=blog-category-detail&url=$1 [L] 
+
+
+
+
+
+
+
+RewriteRule ^blogs/([^/]*)/([^/]*)/$ index.php?mo=blog-detail&category=$1&blog=$2 [L]
+
+
+
+
+
+
+
+
+
+
+
+RewriteRule ^media/$ index.php?mo=media [L]
+
+
+
+
+
+
+
+RewriteRule ^media-detail/$ index.php?mo=media-detail [L]
+
+
+
+
+
+
+
+RewriteRule ^contact/$ index.php?mo=contact&id=9 [L]
+
+
+
+
+
+
+
+RewriteRule ^services/$ index.php?mo=services&id=5 [L]
+
+
+
+
+
+
+
+RewriteRule ^pricing/$ index.php?mo=pricing [L]
+
+
+
+
+
+
+
+RewriteRule ^rent-property/$ index.php?mo=rent-property [L]
+
+
+
+
+
+
+
+RewriteRule ^sell-property/$ index.php?mo=sell-property [L]
+
+
+
+
+
+
+
+RewriteRule ^property-detail/([^/]*)/([^/]*)/$ index.php?mo=property-detail&id=$1&name=$2 [L]
+
+
+
+
+
+
+
+RewriteRule ^property-detail-rent/$ index.php?mo=property-detail-rent [L]
+
+
+
+
+
+
+
+RewriteRule ^search-property-list/$ index.php?mo=search-property-list [L]
+
+
+
+
+
+
+
+RewriteRule ^search-property-list/([^/]*)/$ index.php?mo=search-property-list&sort=$1 [L]
+
+
+
+
+
+
+
+RewriteRule ^search-property-list/([^/]*)/([^/]*)/([^/]*)/$ index.php?mo=search-property-list&sort=$1&set=$2&page=$3 [L]
+
+
+
+
+
+
+
+RewriteRule ^billing/$ index.php?mo=billing [L]
+
+
+
+
+
+
+
+RewriteRule ^billing-detail/$ index.php?mo=billing-detail [L]
+
+
+
+
+
+
+
+RewriteRule ^payment/$ index.php?mo=payment [L]
+
+
+
+
+
+
+
+RewriteRule ^make-payment/$ index.php?mo=make-payment [L]
+
+
+
+
+
+
+
+RewriteRule ^new-projects-promotion/$ index.php?mo=new-projects-promotion&id=17 [L]
+
+
+
+
+
+
+
+RewriteRule ^for-sale/$ index.php?mo=for-sale [L]
+
+
+
+
+
+
+
+RewriteRule ^search-rent-property-thumb/$ index.php?mo=search-rent-property-thumb [L]
+
+
+
+
+
+
+
+RewriteRule ^search-rent-property-thumb/([^/]*)/$ index.php?mo=search-rent-property-thumb&sort=$1 [L]
+
+
+
+
+
+
+
+RewriteRule ^search-rent-property-thumb/([^/]*)/([^/]*)/([^/]*)/$ index.php?mo=search-rent-property-thumb&sort=$1&set=$2&page=$3 [L]
+
+
+
+
+
+
+
+RewriteRule ^search-rent-property-list/$ index.php?mo=search-rent-property-list [L]
+
+
+
+
+
+
+
+RewriteRule ^search-rent-property-list/([^/]*)/$ index.php?mo=search-rent-property-list&sort=$1 [L]
+
+
+
+
+
+
+
+RewriteRule ^search-rent-property-list/([^/]*)/([^/]*)/([^/]*)/$ index.php?mo=search-rent-property-list&sort=$1&set=$2&page=$3 [L]
+
+
+
+
+
+
+
+RewriteRule ^faq/$ index.php?mo=faq&id=7 [L]
+
+
+
+
+
+
+
+RewriteRule ^property-listing-demo/$ index.php?mo=property-listing-demo [L]
+
+
+
+
+
+
+
+RewriteRule ^the-team/$ index.php?mo=the-team&id=10 [L]
+
+
+
+
+
+
+
+RewriteRule ^review-us/$ index.php?mo=review-us&id=8 [L]
+
+
+
+
+
+
+
+RewriteRule ^careers/$ index.php?mo=careers&id=11 [L]
+
+
+
+
+
+
+
+RewriteRule ^enquiry-form/$ index.php?mo=enquiry-form [L]
+
+
+
+
+
+
+
+RewriteRule ^get-free-advice-now/$ index.php?mo=get-free-advice-now [L]
+
+
+
+
+
+
+
+RewriteRule ^review-us-form/$ index.php?mo=review-us-form [L]
+
+
+
+
+
+
+
+RewriteRule ^careers-form/$ index.php?mo=careers-form [L]
+
+
+
+
+
+
+
+RewriteRule ^careers-form/([^/]*)/$ index.php?mo=careers-form&id=$1 [L]
+
+
+
+
+
+
+
+RewriteRule ^nobrokerage-realestateagents/$ index.php?mo=request-call-back [L]
+
+
+
+
+
+
+
+RewriteRule ^request-call-back/$ index.php?mo=nobroker_realestateagent_ahmedabad_redirect [L]
+
+
+
+
+
+
+
+
+
+
+
+RewriteRule ^nobroker-realestateagent-ahmedabad/$ index.php?mo=nobroker_realestateagent_ahmedabad_redirect [L]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RewriteRule ^media/$ index.php?mo=media [L]
+
+
+
+
+
+
+
+RewriteRule ^one-time-offer/$ index.php?mo=one-time-offer [L]
+
+
+
+RewriteRule ^book-free-valuation/$ index.php?mo=book_free_valuation_redirect [L]
+
+
+
+
+
+
+
+RewriteRule ^user-detail/$ index.php?mo=user-detail [L]
+
+
+
+
+
+
+
+RewriteRule ^user-detail-otp/$ index.php?mo=user-detail-otp [L]
+
+
+
+
+
+
+
+RewriteRule ^thank-you-for-valuation/$ index.php?mo=thank-you-for-valuation [L]
+
+
+
+
+
+
+
+RewriteRule ^thank-you/$ index.php?mo=thank-you [L]
+
+
+
+
+
+
+
+RewriteRule ^thank-you-request/$ index.php?mo=thank-you-request [L]
+
+
+
+
+
+
+
+RewriteRule ^thank-you-enquiry/$ index.php?mo=thank-you-enquiry [L]
+
+
+
+
+
+
+
+RewriteRule ^thankyou-comment/$ index.php?mo=thankyou-comment [L]
+
+
+
+
+
+
+
+RewriteRule ^thankyou_review/$ index.php?mo=thankyou_review [L]
+
+
+
+
+
+
+
+RewriteRule ^thankyou-app/$ index.php?mo=thankyou-app [L]
+
+
+
+
+
+
+
+RewriteRule ^term-condition/$ index.php?mo=term-condition&id=13 [L]
+
+
+
+
+
+
+
+RewriteRule ^privacy-policy/$ index.php?mo=privacy-policy&id=14 [L]
+
+
+
+
+
+
+
+RewriteRule ^service-agreement/$ index.php?mo=service-agreement&id=15 [L]
+
+
+
+
+
+
+
+RewriteRule ^website-disclaimer/$ index.php?mo=website-disclaimer&id=16 [L]
+
+
+
+
+
+
+
+RewriteRule ^sign-up/$ index.php?mo=sign-up [L]
+
+
+
+
+
+
+
+RewriteRule ^forgot-password/$ index.php?mo=forgot-password [L]
+
+
+
+
+
+
+
+RewriteRule ^otp/$ index.php?mo=otp [L]
+
+
+
+
+
+
+
+RewriteRule ^billing-otp/$ index.php?mo=billing-otp [L]
+
+
+
+
+
+
+
+RewriteRule ^thankyou-signup/$ index.php?mo=thankyou-signup [L]
+
+
+
+
+
+
+
+RewriteRule ^dashboard/$ index.php?mo=dashboard [L]
+
+
+
+
+
+
+
+RewriteRule ^properties-for-you/$ index.php?mo=properties-for-you [L]
+
+
+
+
+
+
+
+RewriteRule ^my-account/$ index.php?mo=my-account [L]
+
+
+
+
+
+
+
+RewriteRule ^change-password/$ index.php?mo=change-password [L]
+
+
+
+
+
+
+
+RewriteRule ^your-favourite-properties/$ index.php?mo=your-favourite-properties [L]
+
+
+
+
+
+
+
+RewriteRule ^your-favourite-properties/([^/]*)/([^/]*)/$ index.php?mo=your-favourite-properties&set=$1&page=$2 [L]
+
+
+
+
+
+
+
+RewriteRule ^recent-property/$ index.php?mo=recent-property [L]
+
+
+
+
+
+
+
+RewriteRule ^thankyou-billing/$ index.php?mo=thankyou-billing [L]
+
+
+
+
+
+
+
+RewriteRule ^logout/$ loginController.php?mode=logout [L]
+
+
+
+
+
+
+
+RewriteRule ^my-property/$ index.php?mo=my-property [L]
+
+
+
+
+
+
+
+RewriteRule ^ask-a-question/$ index.php?mo=ask-a-question [L]
+
+
+
+
+
+
+
+RewriteRule ^ask-a-question/([^/]*)/$ index.php?mo=ask-a-question&property_id=$1 [L]
+
+
+
+
+
+
+
+RewriteRule ^make-an-offer/$ index.php?mo=make-an-offer [L]
+
+
+
+
+
+
+
+RewriteRule ^make-an-offer/([^/]*)/$ index.php?mo=make-an-offer&property_id=$1 [L]
+
+
+
+
+
+
+
+RewriteRule ^billing-invoice/$ index.php?mo=billing-invoice [L]
+
+
+
+
+
+
+
+RewriteRule ^progress-report/$ index.php?mo=progress-report [L]
+
+
+
+
+
+
+
+RewriteRule ^support/$ index.php?mo=support [L]
+
+
+
+
+
+
+
+RewriteRule ^terms-nd-conditions/$ index.php?mo=terms-nd-conditions [L]
+
+
+
+
+
+
+
+RewriteRule ^change-username/$ index.php?mo=change-username [L]
+
+
+
+
+
+
+
+RewriteRule ^thankyou-buyer-billing/$ index.php?mo=thankyou-buyer-billing [L]
+
+
+
+
+
+
+
+RewriteRule ^home-loan-calculator/$ index.php?mo=home-loan-calculator [L]
+
+
+
+
+
+
+
+RewriteRule ^eligibility-calculator/$ index.php?mo=eligibility-calculator [L]
+
+
+
+
+
+
+
+RewriteRule ^eligibility-detail/([^/]*)/$ index.php?mo=eligibility-detail&id=$1 [L]
+
+
+
+
+
+
+
+RewriteRule ^emi-details/([^/]*)/$ index.php?mo=emi-details&id=$1 [L]
+
+
+
+
+
+
+
+RewriteRule ^emi-calculator/$ index.php?mo=emi-calculator [L]
+
+
+
+
+
+
+
+RewriteRule ^thankyou-eligibilty/$ index.php?mo=thankyou-eligibilty [L]
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+# 21 jan
+
+
+
+RewriteRule ^commercial-property/$ index.php?mo=commercial-property [L]
+
+
+
+RewriteRule ^commercial-property/([^/]*)/([^/]*)/$ index.php?mo=commercial-property&set=$1&page=$2 [L]
+
+
+
+RewriteRule ^commercial-property/([^/]*)/$ index.php?mo=commercial-property&sort=$1 [L]
+
+
+
+RewriteRule ^commercial-property/([^/]*)/([^/]*)/([^/]*)/$ index.php?mo=commercial-property&sort=$1&set=$2&page=$3 [L]
+
+
+
+RewriteRule ^commercial-property-list/$ index.php?mo=commercial-property-list [L]
+
+
+
+RewriteRule ^commercial-property-list/([^/]*)/$ index.php?mo=commercial-property-list&sort=$1 [L]
+
+
+
+RewriteRule ^commercial-property-list/([^/]*)/([^/]*)/([^/]*)/$ index.php?mo=commercial-property-list&sort=$1&set=$2&page=$3 [L]
+
+
+
+RewriteRule ^rent-commercial-property/$ index.php?mo=rent-commercial-property [L]
+
+
+
+RewriteRule ^rent-commercial-property/([^/]*)/$ index.php?mo=rent-commercial-property&sort=$1 [L]
+
+
+
+RewriteRule ^rent-commercial-property/([^/]*)/([^/]*)/([^/]*)/$ index.php?mo=rent-commercial-property&sort=$1&set=$2&page=$3 [L]
+
+
+
+RewriteRule ^rent-commercial-property-list/$ index.php?mo=rent-commercial-property-list [L]
+
+
+
+RewriteRule ^rent-commercial-property-list/([^/]*)/$ index.php?mo=rent-commercial-property-list&sort=$1 [L]
+
+
+
+RewriteRule ^rent-commercial-property-list/([^/]*)/([^/]*)/([^/]*)/$ index.php?mo=rent-commercial-property-list&sort=$1&set=$2&page=$3 [L]
+
+
+
+RewriteRule ^commercial-property-detail/([^/]*)/([^/]*)/$ index.php?mo=commercial-property-detail&id=$1&name=$2 [L]
+
+
+
+
+#7th aug
+#RewriteRule ^property-valuation-calculator/([^/]*)/$ index.php?mo=book-free-valuation&cityName=$1 [L]
+
+RewriteRule ^property-valuation-calculator/$ index.php?mo=property-valuation [L]
+
+#RewriteRule ^property-valuation-new/$ index.php?mo=property-valuation [L]
+#RewriteRule ^property-valuation-new/([^/]*)/$ index.php?mo=property-valuation&name=$1 [L]
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php8_module>
+   php_flag display_errors Off
+   php_value max_execution_time 300
+   php_value max_input_time 300
+   php_value max_input_vars 1000
+   php_value memory_limit 256M
+   php_value post_max_size 768M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php81"
+   php_value upload_max_filesize 768M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors Off
+   php_value max_execution_time 300
+   php_value max_input_time 300
+   php_value max_input_vars 1000
+   php_value memory_limit 256M
+   php_value post_max_size 768M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php81"
+   php_value upload_max_filesize 768M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

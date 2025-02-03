@@ -1,0 +1,393 @@
+@media (max-width:1440px) {
+.masthead2 h1 {
+font-size: 2.5rem;
+margin: 0 0 21px 0!important;
+padding: 0 5%;
+}
+.title-h3 {
+font-size:1.8rem;
+}
+.price {
+font-size:3.8rem;
+}
+ .heading {
+min-height:inherit;
+line-height:90px;
+font-size:2.8em
+}
+
+
+
+
+}
+ @media (max-width:768px) {
+html, #page-top {
+position:relative;
+height:100%;
+/*display:none;*/
+}
+.copyright {
+margin-top:110px
+}
+.masthead2 h1 {
+font-size:1.9rem;
+margin: 0 0 20px 0!important;
+padding:0;
+line-height:inherit
+}
+.mt-10 {
+margin-top: 3%!important;
+}
+.title-h3 {
+font-size:1.6rem;
+line-height:inherit
+}
+ .search-div3 input {
+padding:0 25px;
+line-height:50px;
+font-size:13px;
+height:auto
+}
+.search-div4 input {
+padding:0 25px;
+line-height:50px;
+font-size:13px;
+height:auto
+}
+.search-div4 select {
+padding:0 25px;
+line-height:50px;
+font-size:13px;
+}
+ .header2 {
+height: 56vh;
+padding:0 0 65px 0;
+}
+.logo-text p {
+margin:0 0 30px 0
+}
+.title-h3 {
+margin:0 0 35px 0!important
+}
+.heading {
+min-height: inherit;
+line-height:70px;
+font-size: 2em;
+}
+.text-css2 {
+font-size:14px
+}
+ .inner-text {
+margin:30px 0 20px 0;
+}
+.choose-a-time a {
+font-size:16px;
+padding:10px 25px;
+
+}
+.social-media a {
+margin:24px 3px
+}
+.share-box h2 {
+font-size:2rem
+}
+.inner-text p {
+line-height:25px;
+font-size:16px;
+margin:0 0 10px 0
+}
+.masthead2 {
+min-height:1000px
+}
+.btn-submit {
+line-height:40px
+}
+ .masthead2 {
+ min-height:inherit;
+}
+ .masthead2 {
+background:#fff!important
+}
+
+.masthead2 img { height:auto!important; max-width:inherit!important}
+
+}
+
+ @media (max-width:767px) {.search-div3 select { height:auto}}
+
+ @media (max-width:640px) {
+.masthead2 h1 {
+padding:0;
+}
+.container {
+max-width:100%
+}
+.search-div3 input {
+padding:10px 15px;
+height:50px
+}
+.title-h3 {
+font-size:1.4rem;
+}
+.price {
+font-size: 2.8rem;
+margin:0 0 20px 0!important
+}
+.price span {
+font-size:inherit
+}
+.price span img {
+width:30px!important
+}
+.header2 {
+padding:0 0 30px 0
+}
+.text-css {
+font-size:14px;
+}
+.box-boder {
+margin:0 0 20px 0
+}
+.heading {
+font-size:1.5em;
+}
+.text-css2 {
+font-size:12px;
+}
+.choose-a-time a {
+font-size:14px
+}
+
+.title-h3.small-title span { line-height:normal!important; font-size:1.3rem; display:inline-block}
+
+
+}
+ @media (max-width:575px) {
+.hidden-xs {
+display:none
+}
+#ck-button {
+width:100%;
+border-right:0;
+border-bottom:solid 1px #fff
+}
+.search-div {
+border-right:0;
+border-bottom:0;
+height:auto;
+margin-top:10px
+}
+.border-right {
+border-bottom:1px solid #fff!important;
+border-right:0!important;
+}
+.search-div select {
+width:100%
+}
+.masthead2 h4 {
+line-height:inherit;
+font-size:1rem
+}
+.masthead2 h5 {
+font-size:1.8rem;
+margin:35px 0 30px 0!important
+}
+.search-div .form-control { font-size:15px}
+.search-div3 select { font-size:13px; padding:13px 13px 14px 13px}
+
+.masthead2 h1 { font-size:2rem; line-height:inherit}
+
+
+}
+ @media (max-width:480px) {
+.search-div2 label {
+padding:0 0 0 15px
+}
+.search-div .btn {
+padding: 22px 0.75rem 20px 0.75rem;
+}
+.logo-text p {
+margin: 0 0 20px 0;
+padding: 0;
+}
+.masthead2 {
+min-height:600px;
+}
+.xdsoft_datetimepicker .xdsoft_datepicker {
+width: 78%!important;
+float: left;
+margin-left:0;
+}
+.fancybox-content {
+padding:15px!important
+}
+.social-media a {
+margin:24px 12px 0 12px;
+line-height:45px;
+width:45px;
+height:45px;
+}
+.text-css2 {
+padding:0 0 20px 0
+}
+.masthead2 .container { padding:0 15px }
+
+}
+ @media (max-width:414px) {
+.masthead2 h1 {
+font-size:1.3rem
+}
+.title-h3 {
+font-size:1.2rem;
+line-height:inherit;
+margin:0 0 25px 0!important;
+}
+.box2 {
+width:100%;
+}
+.box select option {
+width:100%;
+}
+.box select {
+font-size:14px;
+}
+.search-div2 label {
+line-height:50px
+}
+#ck-button img {
+width:20px
+}
+.search-div input {
+padding:24px 15px 26px 15px;
+height:60px
+}
+ .search-div .btn {
+padding:15px 15px;
+}
+.search-div select {
+padding:15px 15px;
+height:50px
+}
+.check-now {
+margin:20px 0 20px 0;
+line-height:35px;
+}
+.logo-text h2 {
+font-size:20px;
+margin:5px 0 5px 0
+}
+.logo-text p {
+font-size:12px
+}
+ .masthead2 {
+min-height:300px;
+height: 49vh;
+padding-bottom:0;
+padding-top:20px
+}
+ .masthead22 {
+min-height:700px;
+}
+ .price {
+font-size:2rem
+}
+ .heading {
+font-size:1.2em;
+}
+.inner-text p {
+font-size:15px;
+}
+ .choose-a-time a {
+font-size: 10px;
+padding:10px 30px;
+letter-spacing:0;
+line-height:inherit;
+}
+.choose-a-time img {
+margin-left:10px;
+width:20px
+}
+ .xdsoft_datetimepicker .xdsoft_datepicker {
+width: 72%!important;
+float: left;
+margin-left:0;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th {
+font-size:11px!important
+}
+ .masthead2 h5 {
+font-size:1.4rem;
+margin:20px 0 20px 0!important
+}
+.popup-2 h4 {
+font-size:1rem;
+line-height:inherit;
+margin:20px 0 20px 0
+}
+.popup-2 h4 br {
+display:none
+}
+.popup-2 h6 {
+font-size:14px;
+}
+.search-div4 input {
+padding:0 15px;
+}
+.search-div4 select {
+padding:0 15px;
+}
+.popup-2 h4 {
+font-size:.9rem
+}
+.copyright {
+line-height:40px;
+font-size:11px
+}
+.btn-submit {
+line-height:35px;
+font-size:13px
+}
+.title-h3 {
+font-size:0.9rem
+}
+.heading {
+line-height:inherit
+}
+.inner-boder {
+padding:10px 0
+}
+.datetimepicker3 h6 {
+font-size:15px;
+}
+.social-media a {
+margin:14px 3px 0 3px
+}
+.share-box h2 {
+font-size:1.8rem
+}
+.share-box h2 {
+padding:0 0 10px 0
+}
+.title-h3, .title-h3.percent {
+margin:0 0 10px 0!important
+}
+.price {
+margin: 0 0 10px 0!important;
+}
+}
+ @media (max-width:320px) {
+.xdsoft_datetimepicker .xdsoft_datepicker {
+width:70%!important;
+}
+.price {
+font-size: 1.5rem;
+}
+.heading {
+font-size:.8em;
+}
+.popup-2 h4 {
+font-size: 1rem;
+line-height: inherit;
+margin: 10px 0 10px 0;
+}
+}

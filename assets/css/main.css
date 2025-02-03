@@ -1,0 +1,9 @@
+@import url('../vendor/bootstrap/css/bootstrap.min.css');
+@import url('../vendor/fancybox/fancybox.min.css');
+@import url('../vendor/owlcarousel/owl.carousel.min.css');
+@import url('../vendor/owlcarousel/owl.theme.default.min.css');
+@import url('../js/wow/animate.css');
+@import url('basic.css');
+@import url('style.css');
+/*@import url('../vendor/price/price.css');*/
+@import url('responsive.css');

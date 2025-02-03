@@ -1,0 +1,59 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Composer
+composer.phar
+composer.lock
+
+# PHP
+*.log
+*.cache
+.php_cs.cache
+.phpunit.result.cache
+
+# Environment files
+.env
+.env.backup
+.env.local
+.env.*.local
+
+# Database
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Storage and uploads
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/public/uploads/*
+/public/storage
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Build and temporary files
+/build/
+/dist/
+/tmp/
+*.tmp
+*.bak

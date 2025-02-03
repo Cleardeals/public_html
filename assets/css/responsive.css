@@ -1,0 +1,895 @@
+.rupee { background:url(../img/rupee.svg) no-repeat left center; background-size:15px;} 
+.counter-value { width:100px; margin:0 auto;}
+#sticky {
+position: fixed;
+background: #e30000;
+width:150px;
+color: #fff; top:45%;  border-radius:0 5px 5px 0; text-align:center; padding:20px 5px 15px 5px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index:500}
+#sticky .div-close { position:absolute; top:-10px; right:5px;cursor:pointer;}
+
+
+@media (min-width:767px) { 
+.boder-22 {border-right: 1px solid #dee2e6;}
+}
+
+@media (max-width:1440px) {
+.intro {padding:111px 0 0 0!important}
+.masthead h1 {padding:60px 0 0 0}
+ 
+
+body {padding:156px 0 0 0}
+.intro {padding:111px 0 0 0!important}
+#mainNav .navbar-brand img { width:250px}
+.navbar-nav {margin-top:16px;}
+#mainNav .navbar-brand {padding:0.8rem 0}
+
+.sell-your-property li { padding:15px 0 15px 0; font-size:14px;}
+.founder h3 { font-size:30px; line-height:inherit}
+.fastest-growing h2 { font-size:30px;}
+.fastest-growing h2 span { font-size:36px; margin:15px 0 0 0}
+.box-css h3 { line-height:20px; font-size:15px}
+.box-css p { line-height:inherit}
+.box-css5 h3 { line-height:inherit; min-height:40px}
+.joining-with-us  {font-size:19px}
+.avoid h3 { line-height:inherit; font-size:15px}
+.gateway { font-size:30px}
+.service h2 { font-size:15px;} 
+
+.service3 h2 { font-size:15px;} 
+
+.inner-header h2 {font-size:28px;}
+.inner-header p { text-align:center}
+.inner-header { min-height:337px; padding:80px 0 0 0}
+.how-can { padding:40px 0}
+.how-can .font-30 { font-size:25px}
+.trusted-by  {padding:40px 0}
+.trusted-by .font-34 { font-size:30px} 
+.icon-div {width:60px; height:58px; line-height:58px;}
+.icon-div i {font-size:28px}
+.btn-css2 { font-size:10px;}
+.four-img { padding:58px 0 58px 0}
+.newsletter-bg .form-control { padding:16px 19px!important}
+
+.list .theme-btn {padding-left:15px; padding-right:15px; font-size:13px}
+.list2 li { font-size:13px}
+.properties-name h4{ font-size:18px}
+#myTab .nav-link { padding:15px 20px} 
+.with-cleardeals { font-size:25px}
+#budget_sub_wrap>a {width:335px}
+.box2 { padding:32px 25px}
+
+}
+
+@media (max-width:1280px) {.mainmenu .collapse ul ul {left:-190px;}}
+
+@media (max-width:992px) {.mainmenu .collapse ul ul {left:0;}}
+
+
+@media (max-width:1280px) {
+.masthead h1 {padding:40px 0 0 0}
+ 
+#myTab .nav-link { padding:15px 15px; font-size:14px} 
+.box2 { padding:32px 8px}
+.box2 h3 { line-height:26px; font-size:14px;}	
+.right-box .col-6 { padding:5px!important}	
+.right-box  .box2 { margin-bottom:0;} 
+.top-part2 { padding:6px 110px 6px 0}
+ #mainNav .nav-link { padding:.6rem .4rem; font-size:16px;}
+}
+
+@media (max-width:1024px) {
+#budget_sub_wrap>a {width:278px}
+
+}
+
+
+@media (max-width:1191px) {
+#mainNav .navbar-brand img { width:240px}
+.masthead h1 {padding:0; font-size:24px; margin:0 0 5px 0}
+.masthead h2 { font-size:18px}
+.center-section { padding:50px 0}
+.sell-your-property {padding-bottom:50px;}
+.founder h3 { font-size:25px;}
+.founder { padding:35px 0}
+.brokerage {padding:35px 0}
+.brokerage h2 { font-size:25px; padding:0}
+.fastest-growing h2 { font-size:25px}
+.fastest-growing h2 span {font-size:30px}
+.benefits { padding:50px 0 50px 0}
+.three-color { padding:50px 0 50px 0}
+.three-color h3 { line-height:inherit; font-size:15px;}
+.three-color p { font-size:14px; line-height:inherit} 
+.box-css2 { padding:20px;}
+.box-css2 p { font-size:14px; line-height:25px}
+.title-t h4 { font-size:15px;} 
+.title-t span { font-size:12px;}
+.testimonial { padding:50px 0 30px 0}
+.we-make, .discover-how, .package { padding:50px 0 50px 0}
+.header-border { font-size:20px; line-height:inherit}
+.gateway {font-size:24px}
+.service {padding:50px 15px 50px 15px}
+.header-border { margin-bottom:30px}
+.box-css h3 { min-height:39px}
+.icon-div { left:5px}
+.btn-css2 {right:5px}
+.icon-div { line-height:50px; width:50px; height:50px;}
+.footer h3 {font-size:16px;} 
+.list-css li { font-size:13px} 
+.contact-details li { padding:0 0 0 22px; font-size:13px}
+.blog-right-bt  { font-size:14px; line-height:20px;}
+.newsletter-bg .font-19 { font-size:17px;} 
+.pagination2 { margin-top:10px}
+.title2 {font-size:18px;} 
+}
+
+
+
+@media (min-width:992px) {.n-2 {display:none!important}}
+
+@media (max-width:991px) {
+#mainNav .navbar-toggler { float:right; margin:13px 0 0 0}
+#mainNav .navbar-brand img {width:210px}
+
+#mainNav .nav-link { padding:.7rem .6rem;
+color:rgba(0, 0, 0); text-transform:uppercase; font-size:12px; font-weight:600}
+.masthead h1 { font-size:20px; padding:45px 0 0 0}
+.masthead .container-fluid { padding:0}
+
+
+.dropdown-toggle::after {
+-moz-osx-font-smoothing: grayscale;content: "\f107"; font-size:15px; position:absolute; right:15px
+}
+
+.dropdown-item::after {right:0!important} 
+
+ 
+/*******/
+
+.three-color h3 { font-size:13px;}
+.sell-your-property li {font-size:13px}
+.fastest-growing h2 { font-size:19px}
+.fastest-growing h2 span { font-size:25px;}
+.founder h3 { font-size:20px;}
+.brokerage h2 { font-size:20px;}
+.brokerage p { line-height:25px;}
+.fastest-growing h2 span { margin:0}
+.box-css p { margin-bottom:40px}
+.box-4 { margin-bottom:30px}
+.center-div2 { max-width:100%}
+.package1 { width:100%; background-size:100%;}
+.package2 { width:100%; background-size:100%;}
+.package1 h2 { font-size:35px;}
+.package2 h2 { font-size:35px;}
+.validity { margin:48px 0 0 0}
+.validity2 { margin:48px 0 0 0}
+.validity h4 { font-size:18px}
+.validity2 h4 { font-size:18px;}
+.validity h3 { font-size:15px}
+.click-more { font-size:14px;}
+.rent-my-property { font-size:15px; bottom:25px;}
+.sell-my-property { font-size:15px; bottom:25px;}
+.avoid h3 {font-size:12px;}
+.joining-with-us { padding-left:15px; padding-right:15px;}
+#top-div-1 { font-size:15px}
+.footer h3 { margin-top:40px}
+.img-css { margin-bottom:60px}
+.bt-div { margin-top:0}
+
+.inner-header h2 { line-height:35px; margin:0 0 15px  0}
+.pricing-banner { min-height:inherit; padding:10% 0}
+
+.blog-text  h2 { font-size:15px}
+.blog-text {margin-bottom: 30px;}
+.blog-text h2 { margin:0 0 10px 0!important}
+.pagination { margin-bottom:30px}
+.comment  { margin-bottom:30px}
+.map {margin:50px 0 0 0!important}
+.property-form { margin-bottom:20px}
+
+.property-form { padding:20px}
+#myTab .nav-link { margin:0 5px 10px 5px;}
+#myTab .nav-item { width:50%}
+.tab-list li { line-height:inherit}
+.tab-btn { margin-bottom:10px}
+.myTabContent { padding:15px}
+
+.title-css { font-size:24px}
+.heading-bg h2 	{ font-size:16px}
+.green-bg { font-size:18px}
+.tick-1 { font-size:18px}
+.packages-pop1 .pl-3 { padding:0!important}
+.fancybox-slide--html {padding:6px!important}
+.with-cleardeals {font-size:18px;}
+.box-css h3 { min-height:inherit}
+.contact-css h4 {
+    margin: 12px 0 2px 0;
+}
+
+.div-n { display:none!important}
+#budget_sub_wrap>a {width:309px}
+
+
+.ff_faq_header {font-size:15px;}
+.ff_faq_header[aria-expanded="true"]:after {right:10px; top:10px; font-size:24px;}
+.ff_faq_header[aria-expanded="false"]:after {right:10px; top:10px; font-size:24px;}
+.ff_faq_item { font-size:13px;}
+.none-nav { display:block}
+.box-1  { min-height:inherit}
+.boder-2::before { display:none}
+
+.multiselect-container { height:180px; overflow-x:hidden}
+.n-1 { display:none!important}
+}
+	
+@media (max-width:768px) {
+	
+.call-bt3{ font-size:13px !important}
+#top-div-1 { font-size:13px;}
+.call-bt { font-size:13px; padding:0 14px;} 
+.masthead h1 { font-size:15px; line-height:inherit; padding:35px 0 0 0}
+.masthead h2 { font-size:14px; margin-bottom:15px;}
+.masthead {background:#285891}
+.masthead .theme-btn {font-size:13px; line-height:23px}
+.theme-btn-boder {font-size:13px; line-height:23px}
+.theme-btn {padding-left:15px;padding-right: 15px;}
+.masthead img { height:240px; max-width:inherit!important}
+.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {padding-right: 15px;padding-left: 15px;}
+
+.founder h3 {font-size:17px; padding:0}
+.founder h5 { margin:0!important}
+.founder {padding: 25px 0;}
+.brokerage h2 { line-height:inherit;font-size:17px;}
+.fastest-growing h2 { font-size:17px; line-height:inherit}
+.fastest-growing h2 span { font-size:20px}
+.fastest-growing { padding:20px 0}
+
+.estimated-property {
+    background: url(../img/bg-4.jpg) no-repeat center -50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:680px;
+    width: 100%;
+}
+
+.center-div { padding-top:130px}
+.center-div .font-20 { font-size:18px}
+.center-div  .font-30 { font-size:20px;}
+
+
+.discover-how .header-border { font-size:17px}
+.discover-how { padding:0 0 50px 0}
+.we-make { padding:0 0 50px 0}
+.package2 { width:319px}
+.package1 { width:319px}
+.gateway { font-size:20px;}
+.text1 { text-align:center}
+
+.inner-header h2 { font-size:23px; padding:0;}
+.inner-header  { min-height:inherit; padding:50px 0 50px 0}
+.how-can { padding:30px 0 }
+.how-can .font-30 { font-size:20px}
+.trusted-by { padding:30px 0}
+.trusted-by .font-34 { font-size:25px}
+ 
+.pricing-header  .font-17 { margin-bottom:15px; display:block}
+.pricing-banner { padding:8% 0 6% 0} 
+.with-cleardeals { font-size:17px}
+
+#review-us { padding:15px}
+
+.fancybox-slide--html .fancybox-close-small {right:5px; top:5px;}
+.title-css  { font-size:20px; padding:20px}
+
+.heading-bg h2 { font-size:14px}
+.heading-bg h2 span { font-size:14px}
+.heading-bg h3 { font-size:16px!important; line-height:20px;}
+#tab2 h3 i { display:inline-block}
+#tab2 .font-25 { font-size:20px}
+#tab2  .font-16 { font-size:14px;}
+#tab2 .font-25 { margin-bottom:15px;}
+.list2 li { margin-bottom:5px;  text-align:center}
+.list .theme-btn { margin:0 2px 5px 2px!important;  text-align:center}
+.careers { padding:0 0 20px 0} 
+}
+
+@media (max-width:767px) {
+	.navbar-nav {
+    margin-top: 0;
+}
+#mainNav .nav-link {
+    padding: 0.7rem 0.6rem;
+    font-size: 13px;
+    
+}
+	#mainNav .navbar-brand { float:none;
+    text-align: center;
+    
+    display: inherit;
+}
+.list2 { margin-bottom:15px}
+.heart2 {margin: -15px 0 0 0;}
+.selectdiv select { margin:0}
+.properties-name p { font-size:12px}
+.heart2 { position:absolute; right:15px}
+.tab-content .col-md-8 { padding:0 15px!important}
+.tab-content .col-md-8 { margin-top:20px;}
+.tab-btn, .tab-btn2 , .tab-btn3 {font-size:11px;padding-left:12px;padding-right:12px; margin:0; line-height:26px}
+#myTab .nav-link { font-size:12px}
+.title-css { font-size:16px;}
+.inner-box { padding:15px}
+.table-striped .w-40 {width:auto!important;} 
+
+ 
+.project-detail { text-align:center; padding:20px}
+.project-detail .float-left { float:none!important;}
+.project-detail .float-right {float:none!important;}
+.project-detail .text-right { text-align:center!important;}
+.project-detail h2 {margin-left:3px!important; margin-bottom:5px!important;}
+.project-detail h2 i { vertical-align:middle}
+
+
+.properties-tab .nav-pills .nav-link { font-size:12px;}
+.properties-tab  li { width:33%}
+
+.w-40 { width:auto!important}
+.how-can h2 { font-size:24px}
+.heart { float:left; position:relative; margin:0;}
+.myTabContent h3 { margin-top:20px}
+
+.intro2 {top:15px!important;}
+
+.sticky {position: fixed;top:4%; z-index:999; margin:0 auto; left:0; right:0; width:100% }
+
+.watch-video {font-size:20px;}
+.div-22  { display:block}
+.div-11  { display:none!important}
+
+.mobile-section { display:block}
+.desktop-section { display:none}
+
+.top-part2 {
+    padding: 2px 15px;
+    width: 100%;
+    text-align: center;
+}
+
+} 
+
+@media (max-width:575px) {    
+.footer h3 {padding-top:8px; padding-bottom:8px; border-bottom: solid 1px #2e4b78; border-top: solid 1px #2e4b78;margin-top:15px;}
+.contact-details li {margin-bottom:10px;}
+.contact-details h4 span { margin:5px 0 0 0}
+.list-css li { line-height:28px}
+.footer h3 { font-size:16px}
+.contact-details h4 { font-size:16px}
+.footer h3 { margin-bottom:15px}
+.owl-nav {margin-top:5px;}
+.center-div .font-16 { font-size:13px}
+.center-div {
+    padding-top: 120px;
+}
+.subscribe-img  { padding:0 15px; margin:0 15px}
+.btn-css2 { font-size:13px}	
+.blog-post-text h2 { font-size:20px}
+.border-bubble:before {width:51%;}
+.border-bubble:after {left:47%}
+
+.comment-css .col-md-10  {padding:15px!important}
+.comment {margin-top:20px; padding:15px}
+
+.blog-right-bt { padding:8px 0!important; font-size:11px;}
+#property-tab { max-width:100%}
+.property-form { margin:20px 0 20px 0} 
+.title2 { font-size:15px}
+.tab-btn, .tab-btn2 , .tab-btn3 { margin-bottom:10px}
+.note { padding:15px; font-size:13px;}
+.properties-tab .nav-pills .nav-link { margin:0}
+.three-color p { margin:0 0 30px 0}
+.how-can h2 { font-size:20px}
+.tp-0  { margin-top:5px!important}
+.list2 { text-align:center}
+.list { text-align:center} 
+sup {font-size: 18px;top: -.5em!important;}
+
+span.multiselect-native-select {margin-bottom:10px!important;}
+.selectdiv {margin-bottom:7px;}
+.properties-name p .btn {margin-top:-9px;}
+.call-bt { margin-bottom:3px}
+
+#mainNav .nav-link { margin:0}
+#mainNav .nav-link {     
+    font-size: 11px !important;
+    padding-bottom: 0.7rem;}
+
+.center-section-in {
+min-height:300px
+}
+
+}
+
+@media (max-width:480px) {
+#top-div-1 { font-size:13px; line-height:15px; padding:10px 15px}
+#top-div-1 .close { position:absolute; right:10px; top:-5px; padding:0}
+#top-div-1 .close img { width:15px}
+.top-part2 { text-align:center;padding: 2px 2px;font-size:12px;}
+
+body {padding:120px 0 0 0;}
+.intro {padding: 63px 0 0 0!important;}
+.masthead h1 { font-size:13px; padding:33px 0 0 0}
+.masthead h2 { font-size:12px;}
+.masthead .container { padding:0 5px } 
+.box-css5 h3 { min-height:inherit}
+.trusted-by .font-34 { font-size:18px;}
+.sub-text { padding:15px}
+.sub-text p { font-size:15px; line-height:25px}
+.sub-text .font-16 { font-size:15px}
+.subscribe-img { padding:0}
+.service h2 { font-size:14px;}
+.service3 h2 { font-size:14px;} 
+.subscribe .font-24 { font-size:18px} 
+.service2 { padding:20px 15px 20px 15px!important}
+.gateway {font-size:16px;} 
+.service { padding:50px 15px 0 15px}
+.subscribe { padding:70px 0 20px 0}
+.inner-header h2 { font-size:17px; line-height:24px;}
+.four-img { padding:50px 0 50px 0}
+
+.footer { padding:40px 0 20px 0  }
+.copyright { font-size:12px; padding:15px 0; min-height:inherit}
+.pricing-banner  h2 { margin-bottom:25px!important}
+.package .header-border { margin-bottom:30px!important}
+.properties-name { padding:10px}
+#property-tab { max-width:100%}
+.properties-name p { display:block; margin:10px 0 10px 0}
+.properties-name .float-left { padding-left:0!important} 
+.tab-list li { font-size:13px;     background: url(../img/list.png) no-repeat left 0; margin:10px 0 10px 0}
+#myTab .nav-link { font-size:11px}
+#myTab .nav-link { padding:15px 5px}
+.green-bg { font-size:15px}
+.heading-bg h3 { font-size:15px!important}
+.row4 {margin-right: -10px;margin-left: -10px;}
+.packages-pop1 .pl-3 { font-size:13px}
+.discover-how .header-border {font-size:15px}
+.joining-with-us { font-size:16px}
+.center-section-in { padding:30px 0}
+
+.subscribe-div .text-title h3 { font-size:16px;}
+.subscribe-div .text-title h4 { font-size:20px;}
+.subscribe-div .text-title p { font-size:14px;}
+.how-can h2:before{left: -55px;top:12px;width:50px;}
+.how-can h2:after{right:-55px;top:12px;width: 50px;}
+.selectdiv:after {top:8px;} 
+
+.pricing-2 p {padding-left:0!important; font-size:14px}
+
+.video-div iframe  { width:100%; height:250px; }
+.form-control:disabled, .form-control[readonly] {font-size:13px;}
+
+.new-projects h1 { font-size:20px; line-height:25px;}
+.new-projects h2 { font-size:18px; line-height:23px;}
+
+
+
+.sticky {position: fixed;top:4%; z-index:999; margin:0 auto; left:0; right:0; width:95% }
+
+#div2 {position: fixed; bottom:-25px; z-index:555; margin:0 auto; left:0; right:0; width:95% }
+
+.btn-css-3  .btn-primary h3 { line-height:15px; padding:5px 0; font-size:11px; line-height:inherit}
+
+.project-detail { padding:10px}
+
+.right-box { margin-top:20px;display:none;}
+.box-1  { margin-bottom:20px}
+
+
+.tab-css2  {margin-top:-33%!important; position:absolute; z-index:999}
+#myHeader .navbar { padding:.5rem 0!important}
+#myHeader .nav-link { padding:.5rem 0!important}
+.selectdiv {margin-bottom:5px!important}
+.form-sec h1 {font-size:28px!important}
+#mainNav .navbar-brand img {width:154px;}
+
+.call-bt3 {font-size:12px!important}
+.nav-link i {font-size:11px!important}
+.top-part2 .container { padding:0!important}
+
+.call-bt3 {
+    background: #e30000 !important;
+    text-transform: uppercase;
+    font-size: 12px !important;
+}
+
+.call-bt3 {font-size:11px!important}
+.call-bt3 i {margin-left:2px;}
+.call-bt i {font-size:10px!important}
+.call-bt { line-height:25px!important}
+
+.price-1 {
+background: url(../img/price-1.png) no-repeat 0;
+position: absolute;
+width: 12px!important;
+height: 22px;
+right: -34px!important;
+top: 2px;
+}
+
+
+
+.price-2 {
+background: url(../img/price-2.png) no-repeat 0;
+position: absolute;
+width: 12px!important;
+height: 22px;
+right: -40px!important;
+top: 2px;
+}
+
+
+.div2 {width:240px; margin:0 auto}
+
+.call-bt-neww{ padding:0; font-size:16px;}
+}
+
+@media (max-width:414px) {
+.service h2 { margin-bottom:25px!important}
+.how-can .font-30 { font-size:16px;}
+.trusted-by, .how-can { padding:15px 0}
+.inner-header { padding:30px 0 30px 0}
+.inner-header p { font-size:13px; line-height:24px}
+.trusted-by .font-34 { font-size:17px; line-height:20px}
+.bungalow { font-size:12px}
+.bungalow:before {border-top: 12px solid transparent;
+border-bottom: 14px solid transparent;
+border-right: 10px solid #e30000;}
+.selectdiv select { margin:0px}
+#myTab .nav-item{ width:100%; margin:0;}
+#myTab .nav-link { margin:0 0 5px 0 }
+.tab-btn, .tab-btn2, .tab-btn3 { width:100%;}
+.service h2 {font-size:11px; line-height:18px;}
+.service3 h2 { font-size:11px; line-height:18px;} 
+.title2 { font-size:13px; line-height:inherit}
+.form-group {margin-bottom:.5rem;}
+
+.subscribe-div .text-title { top:12px}
+.subscribe-div .text-title p { font-size:12px; line-height:inherit}
+
+.how-can h2:before{ display:none}
+.how-can h2:after{display:none}
+.how-can h2 { font-size:17px} 
+.sell-your-property li { padding:10px 0 10px 0}
+.founder h3 br { display:none}
+
+#top-div-1 { font-size:10px;}
+#top-div-1 .container { padding:0 10px}
+body {padding:173px 0 0 0}
+
+.center-div .font-20 { font-size:16px; margin:0!important;}
+.discover-how .header-border  br { display:none}
+.masthead .container-fluid  {  padding-right:0!important; padding-left:0!important;}
+.container-fluid {    padding-right:15px!important; padding-left:15px!important;}
+#top-div-1 .close {right:5px;}
+.center-section-in .header-border {margin-bottom:1.5rem!important;}
+
+.blog-post-text h2 {
+font-size: 17px;
+margin: 0 0 .5em 0 !important;
+}
+
+.blog-post-text p { font-size:13px; line-height:25px;}
+#login {padding:25px 15px}
+.input-css { font-size:13px; padding:10px 15px}
+.project-detail .font-22 { font-size:12px;}
+.project-detail .fa-play-circle  { font-size:19px; vertical-align:middle; margin:0 7px 0 0}
+
+.project-detail .float-left .font-13 {font-size:12px;}
+
+.share { width:25px; height:25px; line-height:25px; vertical-align:middle}
+.like2 {width:25px; height:25px; line-height:25px; vertical-align:middle} 
+
+
+.tab-content .mt-5 { margin-top:2rem!important}
+.table-striped  { font-size:13px!important}
+.table-striped .font-14 {font-size:13px!important}
+.table td, .table th { padding:.50rem}
+.residential { padding:6px 5px 6px 5px; font-size:10px; width:140px;}
+.residential:before {border-bottom: 12px solid transparent;}
+.bungalow2 { font-size:10px;}
+.bungalow2:before {    border-bottom: 12px solid transparent;}
+.tab-css {padding:10px}
+.text-box p { line-height:25px; font-size:14px}
+
+.title-css {
+font-size: 14px;
+padding: 20px 45px;
+}
+.btn-list .fa { font-size:12px}
+
+.pricing-banner .font-44 { font-size:30px}
+.billing-t {font-size: 17px!important;}
+
+#budget_sub_wrap>a {
+    width: 344px;
+}
+#mainNav .navbar-brand {padding:1rem 0}
+#mainNav .navbar-brand {padding:.8rem 0;}
+#sidebarCollapse span { display:none}
+#mainNav .navbar-brand img {width:154px;}
+.navbar-brand { margin-right:0}
+.project-detail a { font-size:12px; font-weight:700;}
+.project-detail { font-size:12px; font-weight:700}
+.call-bt {font-size:12px!important;padding: 0 9px;}
+.call-bt3 {font-size:12px!important}
+.nav-link i {font-size:11px!important}
+.btn-360 {height:30px!important}
+}
+
+@media (max-width:380px) {
+	.call-bt3 {
+    font-size: 11px !important;
+}.call-bt-neww {
+    padding: 0;
+    font-size: 14px;
+}
+.sign-up{font-size:13px;}
+.masthead .theme-btn {    font-size: 12px;}
+.masthead  .theme-btn {
+padding-left: 10px;
+padding-right: 10px;
+}
+.center-div2 .col-md-6 { padding:0}
+.joining-with-us { font-size:15px}
+.center-div .font-20 { font-size:13px}
+.center-div .font-30 { font-size:15px}
+.header-border { font-size:17px}
+.header-border {  padding:0 0 10px 0}
+.center-div .theme-btn-boder2 { margin:15px 0 0 0!important}
+.estimated-property { height:577px}
+.center-div .font-16 { line-height:15px; margin:0}
+ 
+.title-t h4 { text-align:center}
+.box-css2 { margin-bottom:10px}
+.sub-in {margin:110px 0 0 0;}
+.subscribe-div { min-height:inherit}
+.blue-bt {padding:3px 25px}
+.newsletter-bg { padding:15px}
+.subscribe-now { padding:12px 10px;  display:inline-block}
+.sub-text .font-16 { font-size:13px;}
+.blue-bt  { font-size:14px}
+.masthead h1 {font-size:11px!important;}
+.masthead h2 {font-size: 11px!important;}
+.theme-btn-boder { font-size:11px!important;}
+.founder h3 , .brokerage h2{ font-size:16px}
+.theme-btn-boder3 { font-size:15px!important}
+#review-us textarea { height:97px; font-size:14px}
+#review-us .input-css { font-size:14px}
+.center-div .font-20 {margin:0!important;}
+.center-div .font-16 { font-size:11px;}
+#top-div-1 { font-size:9px;}
+#top-div-1 .container { padding:0 10px}
+.theme-btn-boder2 {padding-left:20px; padding-right: 20px;}
+.copyright { font-size:10px}
+.in-text { font-size:13px}
+
+
+.title-css {
+font-size: 13px;
+padding: 20px 30px;
+}
+
+.inner-box {padding:5px;}
+.row4 {
+margin-right: -8px;
+margin-left: -8px;
+}
+
+.list2 li {font-size:11px;}
+.list .theme-btn {font-size:11px}
+#tab2 .font-16 { display:block}
+.right-box h3 {font-size:14px} 
+.box2 h3 { line-height:20px;}
+.tab-content .font-16 { line-height:20px; font-size:15px}
+.box2 h3  { padding-left:21px; padding-right:21px; line-height:18px}
+.box2 i { display:block; height:40px}
+
+#budget_sub_wrap>a {width:304px;}
+
+#mainNav .navbar-brand img {width:170px}
+.navbar-expand-lg>.container-fluid {
+padding-right:10px!important;
+padding-left:10px!important;}
+
+#sidebarCollapse span { display:none}
+.tab-css2  {margin-top:-20%!important; position:absolute; z-index:999}
+
+.needs-validation .form-control { font-size:13px;}
+
+}
+
+
+@media (max-width:360px) {
+#mainNav .navbar-brand img {width:150px;}
+.navbar-brand { margin:0}
+#mainNav .nav-link {    font-size:9px!important;}
+.btn-css-3 .btn-primary h3 { font-size:9px}
+ 
+}
+
+@media (max-width:320px) {
+.package2, .package1 {width:280px;}
+.sell-my-property { width:200px;}
+.sub-in {margin:95px 0 0 0;}
+.blog-right-bt { padding:8px 0!important; font-size:9px;}
+.masthead .theme-btn { font-size:10px;}
+.theme-btn i { font-size:12px;}
+.masthead h1 { font-size:11px;}
+.subscribe-div .text-title p { font-size:11px; margin:0;}
+.subscribe-div .text-title h3 { font-size:12px; margin:0;}
+.subscribe-div .text-title h4 { margin:0; font-size:15px}
+.box2 h3  { padding-left:10px; padding-right:10px; line-height:18px}
+#budget_sub_wrap>a {width:249px;}
+#top-div-1 {font-size:8px;}
+#top-div-1 .container {padding:0;}
+
+.project-detail a { font-size:11px;}
+.div-22 .col { padding:0 10px} 
+
+#mainNav .navbar-brand img {width:109px;}
+
+#sticky { width:110px; height:auto!important; font-size:11px;}
+
+}
+
+#mainNav .row {
+  background-color: #fff;
+}
+
+#headline {
+  width: 18px;
+}
+
+@media (max-width: 768px) {
+  #headline {
+    width: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #headline {
+    width: 12px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #mainNav .nav-link {
+    padding: 0.6rem 0.8rem;
+    font-size: 13px;
+  }
+}
+
+
+.wrapper {
+  cursor: pointer;
+}
+
+.wrapper .tip table {
+  /* background-color: green; */
+  width: 250px;
+  text-align: left;
+  box-shadow: 0px 0px 8px #a0a0a0ab;
+  border: 0px solid #fff;
+}
+
+.wrapper .tip table tr {
+  border: none;
+  background-color: rgb(247, 247, 247);
+}
+
+.wrapper .tip table tr:last-child {
+  background-color: #fff;
+}
+
+.wrapper .tip table td {
+  padding: 0% 0% 0% 5%;
+  border: none;
+}
+
+.wrapper .tip {
+  position: absolute;
+  font-size: 0.8rem;
+  text-transform: none;
+  font-weight: bold;
+  margin-top: 4%;
+  /* left: 5px; */
+  /* bottom: 5px; */
+  /* top: 100%; */
+  border: none;
+  opacity: 0;
+  pointer-events: none;
+  /* min-width: 50%; */
+}
+
+.wrapper:hover .tip {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 9999;
+}
+
+.wrapper .tip:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgb(247, 247, 247);
+  top: 23px;
+  /* bottom: 100px; */
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+@media (max-width: 768px) {
+  .wrapper .tip table {
+    width: 200px;
+  }
+
+  .wrapper .tip table td {
+    padding: 4% 0% 4% 3%;
+    border: none;
+  }
+
+  .wrapper .tip {
+    position: absolute;
+    /*top: 28%;*/
+    top: 7%;
+    left: 30%;
+    right: 30%;
+    margin-top: 0px;
+    font-size: 0.5rem;
+    text-transform: none;
+    font-weight: bold;
+    bottom: 30px;
+    border: none;
+  }
+  .wrapper .tip:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    background: rgb(247, 247, 247);
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+
+#banner_top{
+  padding-top: auto;
+}
+
+@media (max-width:768px){
+  #banner_top{
+    padding-top: 40px;
+  }
+}
+@media (max-width:570px){
+  #banner_top{
+    padding-top: 48px;
+  }
+}
+@media (max-width:450px){
+  #banner_top{
+    padding-top: 35px;
+  }
+  .masthead{
+    height: 260px;
+  }
+}
+@media (max-width:430px) and (min-width:415px){
+  #banner_top{
+    padding-top: 100px;
+  }
+  .masthead{
+    height: 300px;
+  }
+}
+

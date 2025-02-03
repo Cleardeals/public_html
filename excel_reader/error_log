@@ -1,0 +1,25 @@
+[14-Jun-2024 07:41:13 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cleardealsconi_newdeals.epro_price_list' doesn't exist in /home/cleardealsconi/public_html/excel_reader/example.php:59
+Stack trace:
+#0 /home/cleardealsconi/public_html/excel_reader/example.php(59): mysqli_query(Object(mysqli), 'insert into epr...')
+#1 {main}
+  thrown in /home/cleardealsconi/public_html/excel_reader/example.php on line 59
+[27-Jun-2024 10:05:57 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cleardealsconi_newdeals.epro_price_list' doesn't exist in /home/cleardealsconi/public_html/excel_reader/example.php:59
+Stack trace:
+#0 /home/cleardealsconi/public_html/excel_reader/example.php(59): mysqli_query(Object(mysqli), 'insert into epr...')
+#1 {main}
+  thrown in /home/cleardealsconi/public_html/excel_reader/example.php on line 59
+[21-Oct-2024 07:24:23 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cleardealsconi_newdeals.epro_price_list' doesn't exist in /home/cleardealsconi/public_html/excel_reader/example.php:59
+Stack trace:
+#0 /home/cleardealsconi/public_html/excel_reader/example.php(59): mysqli_query(Object(mysqli), 'insert into epr...')
+#1 {main}
+  thrown in /home/cleardealsconi/public_html/excel_reader/example.php on line 59
+[18-Dec-2024 13:53:23 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cleardealsconi_newdeals.epro_price_list' doesn't exist in /home/cleardealsconi/public_html/excel_reader/example.php:59
+Stack trace:
+#0 /home/cleardealsconi/public_html/excel_reader/example.php(59): mysqli_query(Object(mysqli), 'insert into epr...')
+#1 {main}
+  thrown in /home/cleardealsconi/public_html/excel_reader/example.php on line 59
+[31-Dec-2024 06:55:51 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cleardealsconi_newdeals.epro_price_list' doesn't exist in /home/cleardealsconi/public_html/excel_reader/example.php:59
+Stack trace:
+#0 /home/cleardealsconi/public_html/excel_reader/example.php(59): mysqli_query(Object(mysqli), 'insert into epr...')
+#1 {main}
+  thrown in /home/cleardealsconi/public_html/excel_reader/example.php on line 59

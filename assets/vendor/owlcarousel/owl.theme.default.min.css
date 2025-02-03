@@ -1,0 +1,43 @@
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+	text-align:center;
+	-webkit-tap-highlight-color:transparent
+}
+.owl-theme .owl-nav {}
+.owl-theme .owl-nav [class*=owl-] {
+color:#FFF;
+font-size:15px!important;
+margin:5px;
+background:#D6D6D6;
+display:inline-block;
+cursor:pointer;   height:40px;  
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+background:#e30000;
+color:#FFF;
+text-decoration:none
+}
+.owl-theme .owl-nav .disabled {
+	cursor:default; background:#e30000;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+	margin-top:10px
+}
+.owl-theme .owl-dots .owl-dot {
+	display:inline-block;
+	zoom:1
+}
+.owl-theme .owl-dots .owl-dot span {
+background:#D6D6D6;
+display:block;
+-webkit-backface-visibility:visible;
+transition:opacity .2s ease;
+
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background:#869791
+}
