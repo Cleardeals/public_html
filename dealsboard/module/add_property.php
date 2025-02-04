@@ -230,6 +230,12 @@ $dbAppliances = $dbObj->SelectQuery();
                         <br>
                         <br>
                       </div>
+                      <div class="col-md-4">
+                        <h6>Custom Tag</h6>
+                        <input type="text" class="form-control" name="data[custom_tag]" id="custom_tag" value="<?=$dbProperty_detail[0]['custom_tag'] ?? ""?>" placeholder="Custom Tag">
+                        <br>
+                        <br>
+                      </div>
                     </div>
                     <h6>About Property</h6>
                     <textarea class="form-control" name="info[content]" rows="5"><?=$dbProperty[0]['content'] ?? ""?></textarea>

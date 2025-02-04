@@ -720,12 +720,19 @@ $dbCity = $dbObj->SelectQuery();
           0
           <?php }?>
         </div>
-        <div class="for-sell float-right mb-2">for Sell</div>
+        <!-- <div class="custom_tag"><?php $customTag = isset($yourArray['custom_tag']) ? $yourArray['custom_tag'] : 'no custom' ; ?>  -->
+        <?php if (!empty($dbPropertDetail[0]['custom_tag'])) { ?>
+                <div class="custom-tag">
+                 <?=$dbPropertDetail[0]['custom_tag']?>
+                </div>
+                <?php } ?> 
+      </div>
+        <div class="for-sell float-right mb-2">for Selll</div>
         <div class="clearfix"></div>
         <div class="properties-div">
-          <?php if(!empty($dbPropertImages[0]['image'])){?>
-          <div class="img-pro"> <a data-fancybox="gallery" href="<?=HTACCESS_URL?>cms_images/property/original/<?=$dbPropertImages[0]['image']?>"> <img src="<?=HTACCESS_URL?>cms_images/property/thumb/<?=$dbPropertImages[0]['image']?>" class="img-fluid"></a></div>
-          <?php }?>
+          <!-- <?php if(!empty($dbPropertImages[0]['image'])){?> -->
+          <div class="img-pro"> <a data-fancybox="gallery" href="<?=HTACCESS_URL?>cms_images/property/original/<?=$dbPropertImages[0]['image']?>"> <img src="https://www.cleardeals.co.in/cms_images/property/thumb/dsc00106-1738574068.jpg" class="img-fluid"></a></div>
+          <!-- <?php }?> -->
           <div class="properties-name">
             <div class="float-left"><?php if(empty($dbPropertDetail[0]['pricerequest'])){?> <span class="montserrat font-semibold text-blue font-18">
               <?php if(!empty($dbPropertDetail[0]['offer_price'])){?>
@@ -743,6 +750,7 @@ $dbCity = $dbObj->SelectQuery();
               <div class="for-sell float-left bg2css">
                 <?=$dbProperty[$i]['property_type']?>
               </div>
+              <!-- <div class="custom_tag">Custom Tag</div> -->
             </div>
             <div class="float-right">
               <?php if(!empty($dbProperty[$i]['tour_link'])){?>
@@ -763,12 +771,19 @@ $dbCity = $dbObj->SelectQuery();
             <div>
               <div class="sq">
                 <ul>
-                  <li><i class="flaticon-hotel-sign"></i>
+                  <!-- <li><i class="flaticon-hotel-sign"></i>
                     <?=$dbPropertDetail[0]['no_of_bedrooms']?>
                   </li>
                   <li><i class="flaticon-bath-tub"></i>
                     <?=$dbPropertDetail[0]['no_of_bathrooms']?>
+                  </li> -->
+                  <li><i class="flaticon-hotel-sign"></i>
+                  <?= !empty($dbPropertDetail[0]['no_of_bedrooms']) ? $dbPropertDetail[0]['no_of_bedrooms'] : ''; ?>
                   </li>
+                  <li><i class="flaticon-bath-tub"></i>
+                  <?= !empty($dbPropertDetail[0]['no_of_bathrooms']) ? $dbPropertDetail[0]['no_of_bathrooms'] : ''; ?>
+                  </li>
+
                 </ul>
               </div>
               <?php if(!isset($_SESSION['user']['is_login'])) {?>
@@ -791,9 +806,13 @@ $dbCity = $dbObj->SelectQuery();
             <a data-toggle="modal" data-target="#myModals<?=$dbProperty[$i]['id']?>" class="btn btn-contact mb-2" style="color:#fff;">Contact Us</a>
             <?php }?>
             <div class="clearfix"></div>
-            <p> <strong>Post Date:</strong>
+            <!-- <p> <strong>Post Date:</strong>
               <?=date('d/m/Y', strtotime($dbPropertDetail[0]['post_date']))?>
+            </p> -->
+            <p> <strong>Post Date:</strong>
+             <?= !empty($dbPropertDetail[0]['post_date']) ? date('d/m/Y', strtotime($dbPropertDetail[0]['post_date'])) : ''; ?>
             </p>
+
           </div>
         </div>
       </div>
@@ -1133,3 +1152,17 @@ $("#price-max li").click(function(){
 	$('#min-max-price-range1').dropdown('toggle');
 });
 </script>
+
+<style>
+  .custom-tag{
+    background: orange;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px 10px;
+    float: left;
+    margin-right: 11px;
+    position: relative;
+}
+</style>

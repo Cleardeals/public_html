@@ -542,9 +542,9 @@ $dbVideo = $dbObj->SelectQuery();
 <div id="homepopupModal" class="home-popup-modal">
     <div class="home-popup-content">
         <!-- Close Button -->
-        <span id="homecloseBtn" class="home-close-btn">&times;</span>
+        <!-- <span id="homecloseBtn" class="home-close-btn">&times;</span> -->
         <!-- Image inside the modal -->
-        <img src="<?=HTACCESS_URL?>assets\img\gandhinagar.jpg" alt="Popup Image" class="home-popup-image">
+        <img src="<?=HTACCESS_URL?>assets\img\popup-home.png" alt="Popup Image" class="home-popup-image">
     </div>
 </div>
 
@@ -584,16 +584,18 @@ $(document).ready(function(){
 
 
 $(document).ready(function() {
-    $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
-
+    // Show popup instantly
+    $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
     setTimeout(() => {
-        $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
-    }, 2000);
+        $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+    }, 3000);
 
+    // Close the popup when clicking the close button
     $('#homecloseBtn').click(function() {
         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
     });
 
+    // Close the popup if the user clicks outside of it
     $(window).click(function(event) {
         if ($(event.target).is('#homepopupModal')) {
             $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
@@ -607,21 +609,13 @@ $(document).ready(function() {
 
 
  <style> 
+ @media(max-width:767px){
+  .home-popup-image {
+    width: 80% !important;
+    height: 52% !important;
+}
+ }
 #homepopupModal{
-  /* display: none;
-  position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-
-    visibility: hidden; 
     opacity: 0; 
     position: fixed; 
     z-index: 1000; 
@@ -643,12 +637,12 @@ $(document).ready(function() {
 
 .home-popup-content {
     position: relative;
-    padding: 20px;
-    background-color: white;
+    /* padding: 20px; */
+    /* background-color: white; */
     border-radius: 8px;
     text-align: center;
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
 }
 
 

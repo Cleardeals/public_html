@@ -722,6 +722,11 @@ $dbUser = $dbObj->SelectQuery();
                   <?php }?>
                 </div>
                 <div class="for-sell">for SELL</div>
+                <?php if (!empty($dbPropertDetail[0]['custom_tag'])) { ?>
+                <div class="custom-tag">
+                 <?=$dbPropertDetail[0]['custom_tag']?>
+                </div>
+                <?php } ?> 
                 <span class="montserrat font-semibold text-blue font-18 float-left">
                 <?php if(!empty($dbPropertDetail[0]['offer_price'])){?>
                 ₹
@@ -1201,6 +1206,18 @@ function sortme(sortval){
 
 }
 
+.custom-tag{
+    background:orange;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px 10px;
+    float: left;
+    margin-right: 11px;
+    position: relative;
+}
+
 
 
 .pro-read:hover {
@@ -1431,3 +1448,4 @@ $("#price-max li").click(function(){
 });
 
 </script>
+
