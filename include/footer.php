@@ -120,7 +120,8 @@ $dbSocial = $dbObj->SelectQuery();
 <div class="copyright">
   <div class="container"> <!--Created by <a href="<?php //=$dbContact[0]['link']?>" target="_blank">
    <?php //=$dbContact[0]['created_by']?></a>-->
-    <?=$dbContact[0]['copyright']?>
+    <!-- <?=$dbContact[0]['copyright']?> -->
+    <?= preg_replace('/\d{4}/', date("Y"), $dbContact[0]['copyright']) ?>
   </div>
 </div>
 <div class="overlay"></div>

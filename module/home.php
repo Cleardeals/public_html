@@ -129,7 +129,9 @@ $dbVideo = $dbObj->SelectQuery();
 
       <p> We at Cleardeals feel your pain of paying high "Brokerages" for the property deals. We understand how it feels to deal with the circumstances that may arise from a home deal that goes wrong due to amateur traditional estate agency. That's why we have designed an alternate solution to provide you with a highly professional and "no brokerage" real estate service for your home selling. </p>
       
-      <?=html_entity_decode(stripslashes($dbHomecontent[0]['content']))?>
+      <!-- <?=html_entity_decode(stripslashes($dbHomecontent[0]['content']))?> -->
+      <?= nl2br(html_entity_decode(stripslashes(str_replace(array("\\r\\n", "\\n\\r", "\\n", "\\r", "\\"), '', $dbHomecontent[0]['content'])))) ?>
+
       
        <a class="theme-btn-boder2 btn font-13 pt-0 pb-0 montserrat font-bold" href="<?=HTACCESS_URL?>about/"> Continue Reading 
 
@@ -532,13 +534,142 @@ $dbVideo = $dbObj->SelectQuery();
   <?php //include('partner-detail.php');?>
 </div>
 <?php include(INCLUDE_DIR.'footer.php'); ?>
+
+
+<!-- Your existing home.php content -->
+
+<!-- Popup Modal -->
+<div id="homepopupModal" class="home-popup-modal">
+    <div class="home-popup-content">
+        <!-- Close Button -->
+        <span id="homecloseBtn" class="home-close-btn">&times;</span>
+        <!-- Image inside the modal -->
+        <img src="<?=HTACCESS_URL?>assets\img\gandhinagar.jpg" alt="Popup Image" class="home-popup-image">
+    </div>
+</div>
+
+<!-- Include jQuery (if not already included) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Your Custom Script -->
+<script src="script.js"></script>
+
 <script>
 $(document).ready(function(){
   $(".div-close").click(function(){
     $("#sticky").hide();
   });
 });
+
+
+
+// script.js or inside a <script> tag in home.php
+
+// $(document).ready(function() {
+//     // Show the popup after the page loads (can add delay if needed)
+//     $('#homepopupModal').fadeIn();
+
+//     // Close the popup when the close button is clicked
+//     $('#homecloseBtn').click(function() {
+//         $('#homepopupModal').fadeOut();
+//     });
+
+//     // Close the popup when clicking outside the modal (on the background)
+//     $(window).click(function(event) {
+//         if ($(event.target).is('#homepopupModal')) {
+//             $('#homepopupModal').fadeOut();
+//         }
+//     });
+// });
+
+
+$(document).ready(function() {
+    $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+
+    setTimeout(() => {
+        $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
+    }, 2000);
+
+    $('#homecloseBtn').click(function() {
+        $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+    });
+
+    $(window).click(function(event) {
+        if ($(event.target).is('#homepopupModal')) {
+            $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+        }
+    });
+});
+
+
+
 </script> 
+
+
+ <style> 
+#homepopupModal{
+  /* display: none;
+  position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    visibility: hidden; 
+    opacity: 0; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+/* .home-popup-modal {
+    display: none; 
+   
+} */
+
+.home-popup-content {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    width: 40%;
+    height: 40%;
+}
+
+
+.home-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.home-popup-image {
+  width: 80%;
+  height: 100%;
+}
+
+
+</style> 
 
 <!--rangeslider in home page-->
 <!--<script src="<?=HTACCESS_URL?>assets/vendor/rangeslider/rangeslider2.js"></script>-->
