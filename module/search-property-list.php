@@ -1207,7 +1207,7 @@ function sortme(sortval){
 }
 
 .custom-tag{
-    background:orange;
+    background:red;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;

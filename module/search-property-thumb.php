@@ -730,9 +730,10 @@ $dbCity = $dbObj->SelectQuery();
         <div class="for-sell float-right mb-2">for Selll</div>
         <div class="clearfix"></div>
         <div class="properties-div">
-          <!-- <?php if(!empty($dbPropertImages[0]['image'])){?> -->
-          <div class="img-pro"> <a data-fancybox="gallery" href="<?=HTACCESS_URL?>cms_images/property/original/<?=$dbPropertImages[0]['image']?>"> <img src="https://www.cleardeals.co.in/cms_images/property/thumb/dsc00106-1738574068.jpg" class="img-fluid"></a></div>
-          <!-- <?php }?> -->
+           <?php if(!empty($dbPropertImages[0]['image'])){?>
+            <div class="img-pro"> <a data-fancybox="gallery" href="<?=HTACCESS_URL?>cms_images/property/original/<?=$dbPropertImages[0]['image']?>"> <img src="<?=HTACCESS_URL?>cms_images/property/thumb/<?=$dbPropertImages[0]['image']?>" class="img-fluid"></a></div>
+          <!-- <div class="img-pro"> <a data-fancybox="gallery" href="<?=HTACCESS_URL?>cms_images/property/original/<?=$dbPropertImages[0]['image']?>"> <img src="https://www.cleardeals.co.in/cms_images/property/thumb/dsc00106-1738574068.jpg" class="img-fluid"></a></div> -->
+          <?php }?> 
           <div class="properties-name">
             <div class="float-left"><?php if(empty($dbPropertDetail[0]['pricerequest'])){?> <span class="montserrat font-semibold text-blue font-18">
               <?php if(!empty($dbPropertDetail[0]['offer_price'])){?>
@@ -1155,7 +1156,7 @@ $("#price-max li").click(function(){
 
 <style>
   .custom-tag{
-    background: orange;
+    background: red;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
