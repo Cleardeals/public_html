@@ -508,11 +508,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>-->
 </body></html>
 
 <!-- Popup Modal -->
- <div id="homepopupModal" class="home-popup-modal">
+<div id="homepopupModal" class="home-popup-modal">
     <div class="home-popup-content">
-        <img src="<?=HTACCESS_URL?>assets\img\popup-home.png" alt="Popup Image" class="home-popup-image">
+        <span id="homecloseBtn" class="home-close-btn">&times;</span>
+        <img src="<?=HTACCESS_URL?>assets/img/popup-home.png" alt="Popup Image" class="home-popup-image">
     </div>
-</div> 
+</div>
+
 
 <!-- Include jQuery (if not already included) -->
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
@@ -522,25 +524,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>-->
 
 <script>
 
+// $(document).ready(function() {
+//     // Show popup instantly
+//     $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
+//     setTimeout(() => {
+//         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+//     }, 5000);
+
+//     // Close the popup when clicking the close button
+//     $('#homecloseBtn').click(function() {
+//         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+//     });
+
+//     // Close the popup if the user clicks outside of it
+//     $(window).click(function(event) {
+//         if ($(event.target).is('#homepopupModal')) {
+//             $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+//         }
+//     });
+
+//     $("#homecloseBtn").click(function() {
+//         $("#homepopupModal").css({ "visibility": "hidden", "opacity": "0" });
+//     });
+// });
+
+
+
 $(document).ready(function() {
     // Show popup instantly
-    $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
+    $('#homepopupModal').css({ "visibility": "visible", "opacity": "1", "pointer-events": "auto" });
+
+    // Auto-hide after 5 seconds
     setTimeout(() => {
-        $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+        $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0", "pointer-events": "none" });
     }, 5000);
 
     // Close the popup when clicking the close button
     $('#homecloseBtn').click(function() {
-        $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+        console.log("Close button clicked!"); // Debugging log
+        $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0", "pointer-events": "none" });
     });
 
     // Close the popup if the user clicks outside of it
     $(window).click(function(event) {
         if ($(event.target).is('#homepopupModal')) {
-            $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+            $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0", "pointer-events": "none" });
         }
     });
 });
+
+
+
+   
+
 
 
 
@@ -555,19 +591,6 @@ $(document).ready(function() {
 }
  }
 #homepopupModal{
-    /* opacity: 0; 
-    position: fixed; 
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.5s ease-in-out;  */
-
     opacity: 0;
     visibility: hidden;  /* Hidden by default */
     position: fixed;
@@ -587,8 +610,6 @@ $(document).ready(function() {
 
 .home-popup-content {
     position: relative;
-    /* padding: 20px; */
-    /* background-color: white; */
     border-radius: 8px;
     text-align: center;
     width: 60%;
@@ -596,7 +617,7 @@ $(document).ready(function() {
 }
 
 
-.home-close-btn {
+/* .home-close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -604,7 +625,7 @@ $(document).ready(function() {
     font-weight: bold;
     color: #000;
     cursor: pointer;
-}
+} */
 
 
 .home-popup-image {
@@ -617,5 +638,31 @@ $(document).ready(function() {
     visibility: visible; /* Make the modal visible */
     pointer-events: auto;  /* Enable interactions */
 }
+
+.home-close-btn {
+    position: absolute;
+    top: 0px;  /* Moved inside modal */
+    right: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    z-index: 1001; /* Ensure it's above the modal */
+}
+
+.home-close-btn:hover {
+    background: red; /* Red hover effect */
+}
+
+
+
 
 </style> 
