@@ -506,3 +506,116 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>-->
 <!-- End Google Tag Manager (noscript) -->
 
 </body></html>
+
+<!-- Popup Modal -->
+ <div id="homepopupModal" class="home-popup-modal">
+    <div class="home-popup-content">
+        <img src="<?=HTACCESS_URL?>assets\img\popup-home.png" alt="Popup Image" class="home-popup-image">
+    </div>
+</div> 
+
+<!-- Include jQuery (if not already included) -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+<!-- Include Your Custom Script -->
+<!-- <script src="script.js"></script> -->
+
+<script>
+
+$(document).ready(function() {
+    // Show popup instantly
+    $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
+    setTimeout(() => {
+        $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+    }, 5000);
+
+    // Close the popup when clicking the close button
+    $('#homecloseBtn').click(function() {
+        $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+    });
+
+    // Close the popup if the user clicks outside of it
+    $(window).click(function(event) {
+        if ($(event.target).is('#homepopupModal')) {
+            $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+        }
+    });
+});
+
+
+
+</script> 
+
+
+ <style> 
+ @media(max-width:767px){
+  .home-popup-image {
+    width: 80% !important;
+    height: 52% !important;
+}
+ }
+#homepopupModal{
+    /* opacity: 0; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;  */
+
+    opacity: 0;
+    visibility: hidden;  /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Delay visibility change */
+    pointer-events: none;  /* Disable interactions when hidden */
+}
+
+
+.home-popup-content {
+    position: relative;
+    /* padding: 20px; */
+    /* background-color: white; */
+    border-radius: 8px;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+}
+
+
+.home-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.home-popup-image {
+  width: 80%;
+  height: 100%;
+}
+
+#homepopupModal.visible {
+    opacity: 1;
+    visibility: visible; /* Make the modal visible */
+    pointer-events: auto;  /* Enable interactions */
+}
+
+</style> 

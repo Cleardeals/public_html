@@ -71,11 +71,11 @@ $dbFav = $dbObj->SelectQuery();
                   <div class="col-md-5">
                     <div class="heart heart2">
                       <div class="row m-0">
-                        <div class="col-lg-9 col-6 mt-3 mt-3">
+                        <!-- <div class="col-lg-9 col-6 mt-3 mt-3">
                           <p> <strong>Post Date:</strong>
                             <?=date('d/m/Y', strtotime($dbPropertyDetail[0]['post_date']))?>
                           </p>
-                        </div>
+                        </div> -->
                         <div class="col-lg-3 col-6"> 
                         <a href="<?=HTACCESS_URL?>userController.php?mode=remove_fav_prop&property_id=<?=$dbProperty[0]['id']?>">
                         <i class="fa fa-heart" style="color:#e30000;"></i></a></div>
