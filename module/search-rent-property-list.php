@@ -833,11 +833,11 @@ $dbUser = $dbObj->SelectQuery();
               <div class="col-md-5">
                 <div class="heart heart2">
                   <div class="row m-0">
-                    <div class="col-lg-9 col-6 mt-3 mt-3">
+                    <!-- <div class="col-lg-9 col-6 mt-3 mt-3">
                       <p> <strong>Post Date:</strong>
                         <?=date('d/m/Y', strtotime($dbPropertDetail[0]['post_date']))?>
                       </p>
-                    </div>
+                    </div> -->
                     <div class="col-lg-3 col-6">
                       <?php if(!isset($_SESSION['user']['is_login'])) {?>
                       <div class="heart"><a href="" data-toggle="modal" data-target="#myModal"> <i class="fa fa-heart"></i></a></div>

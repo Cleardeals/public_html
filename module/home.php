@@ -3,6 +3,7 @@
 <?php }else{?>
 <?php include(INCLUDE_DIR.'header1.php') ?>
 <?php }?>
+
 <?php
 $dbObj->dbQuery="select * from ".PREFIX."review where home_status='1' and admin_del='0' order by display_order";
 $dbReview = $dbObj->SelectQuery();
@@ -129,7 +130,9 @@ $dbVideo = $dbObj->SelectQuery();
 
       <p> We at Cleardeals feel your pain of paying high "Brokerages" for the property deals. We understand how it feels to deal with the circumstances that may arise from a home deal that goes wrong due to amateur traditional estate agency. That's why we have designed an alternate solution to provide you with a highly professional and "no brokerage" real estate service for your home selling. </p>
       
-      <?=html_entity_decode(stripslashes($dbHomecontent[0]['content']))?>
+      <!-- <?=html_entity_decode(stripslashes($dbHomecontent[0]['content']))?> -->
+      <?= nl2br(html_entity_decode(stripslashes(str_replace(array("\\r\\n", "\\n\\r", "\\n", "\\r", "\\"), '', $dbHomecontent[0]['content'])))) ?>
+
       
        <a class="theme-btn-boder2 btn font-13 pt-0 pb-0 montserrat font-bold" href="<?=HTACCESS_URL?>about/"> Continue Reading 
 
@@ -532,13 +535,62 @@ $dbVideo = $dbObj->SelectQuery();
   <?php //include('partner-detail.php');?>
 </div>
 <?php include(INCLUDE_DIR.'footer.php'); ?>
+
+
+<!-- Your existing home.php content -->
+
+
+<!-- Popup Modal -->
+<div id="homepopupModal" class="home-popup-modal">
+    <div class="home-popup-content">
+        <!-- Close Button -->
+        <!-- <span id="homecloseBtn" class="home-close-btn">&times;</span> -->
+        <!-- Image inside the modal -->
+        <img src="<?=HTACCESS_URL?>assets\img\popup-home.png" alt="Popup Image" class="home-popup-image">
+    </div>
+</div>
+
+<!-- Include jQuery (if not already included) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Your Custom Script -->
+<script src="script.js"></script>
+
 <script>
 $(document).ready(function(){
   $(".div-close").click(function(){
     $("#sticky").hide();
   });
 });
+
+
+
+// $(document).ready(function() {
+//     // Show popup instantly
+//     $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
+//     setTimeout(() => {
+//         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+//     }, 3000);
+
+//     // Close the popup when clicking the close button
+//     $('#homecloseBtn').click(function() {
+//         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+//     });
+
+//     // Close the popup if the user clicks outside of it
+//     $(window).click(function(event) {
+//         if ($(event.target).is('#homepopupModal')) {
+//             $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+//         }
+//     });
+// });
+
+
+
 </script> 
+
+
+
 
 <!--rangeslider in home page-->
 <!--<script src="<?=HTACCESS_URL?>assets/vendor/rangeslider/rangeslider2.js"></script>-->

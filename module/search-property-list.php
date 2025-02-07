@@ -189,6 +189,14 @@ if(!empty($city)){
 	$dbObj->dbQuery.=" and city='".$city."'";	
 }
 
+// // Modify the query to join with clear_property_detail and order by custom_tag
+// $dbObj->dbQuery.=" LEFT JOIN ".PREFIX."property_detail ON ".PREFIX."property.id = ".PREFIX."property_detail.property_id";
+// $dbObj->dbQuery.=" order by ".PREFIX."property_detail.custom_tag desc, ".PREFIX."property.post_date desc";
+
+// $dbResult = $dbObj->SelectQuery();
+// $totalrecords = $dbResult[0]["total"];
+// // ...existing code...
+
 if(!empty($locationname) && strlen($locationname)>3){
 	$dbObj->dbQuery .= " and location in (".$locationname.")";
 }
@@ -308,6 +316,31 @@ if(($minrent[1]=='Thousand') && ($maxrent[1]=='Thousand')){
 }
 
 $dbObj->dbQuery.=" order by $sort $page_limit";
+
+
+// $dbObj->dbQuery = "SELECT ".PREFIX."property.*, ".PREFIX."property_detail.custom_tag 
+// FROM ".PREFIX."property 
+// LEFT JOIN ".PREFIX."property_detail ON ".PREFIX."property.id = ".PREFIX."property_detail.property_id 
+// WHERE ".PREFIX."property.for_property='Sell' 
+// AND ".PREFIX."property.status='1' 
+// AND ".PREFIX."property.admin_del='0'";
+
+// // Add state and city filters if they are set
+// if (!empty($state)) {
+//     $dbObj->dbQuery .= " AND ".PREFIX."property.State='".$state."'";
+// }
+
+// if (!empty($city)) {
+//     $dbObj->dbQuery .= " AND ".PREFIX."property.city='".$city."'";
+// }
+
+
+// // Add ORDER BY clause ensuring custom_tag items are at the top while respecting the selected sorting
+// $dbObj->dbQuery .= " ORDER BY 
+//     (CASE WHEN ".PREFIX."property_detail.custom_tag IS NOT NULL AND ".PREFIX."property_detail.custom_tag != '' THEN 0 ELSE 1 END),
+//     $sort $page_limit";
+
+
 $dbProperty = $dbObj->SelectQuery();
 $cntH = count((array)$dbProperty);
 //echo $dbObj->dbQuery;
@@ -691,8 +724,14 @@ $dbUser = $dbObj->SelectQuery();
 
 		$propertyName = str_replace(' ','-',$dbProperty[$i]['property_name']);
 
-		$dbObj->dbQuery="select * from ".PREFIX."property_detail where property_id='".$dbProperty[$i]['id']."'";
-		$dbPropertDetail = $dbObj->SelectQuery();
+	$dbObj->dbQuery="select * from ".PREFIX."property_detail where property_id='".$dbProperty[$i]['id']."'";
+// $dbObj->dbQuery = "SELECT *, 
+//                    CASE WHEN custom_tag IS NOT NULL AND custom_tag <> '' THEN 1 ELSE 2 END AS sort_priority
+//                    FROM ".PREFIX."property_detail 
+//                    WHERE property_id='".$dbProperty[$i]['id']."'
+//                    ORDER BY sort_priority, post_date DESC";
+
+		$dbPropertDetail = $dbObj->SelectQuery();   
 
 		$dbObj->dbQuery="select * from ".PREFIX."property_images where property_id='".$dbProperty[$i]['id']."' and front_status='1'";
 		$dbPropertImages = $dbObj->SelectQuery();
@@ -722,6 +761,11 @@ $dbUser = $dbObj->SelectQuery();
                   <?php }?>
                 </div>
                 <div class="for-sell">for SELL</div>
+                <?php if (!empty($dbPropertDetail[0]['custom_tag'])) { ?>
+                <div class="custom-tag">
+                 <?=$dbPropertDetail[0]['custom_tag']?>
+                </div>
+                <?php } ?> 
                 <span class="montserrat font-semibold text-blue font-18 float-left">
                 <?php if(!empty($dbPropertDetail[0]['offer_price'])){?>
                 ₹
@@ -743,11 +787,11 @@ $dbUser = $dbObj->SelectQuery();
               <div class="col-md-5">
                 <div class="heart heart2">
                   <div class="row m-0">
-                    <div class="col-lg-9 col-6 mt-3 mt-3">
+                    <!-- <div class="col-lg-9 col-6 mt-3 mt-3">
                       <p> <strong>Post Date:</strong>
                         <?=date('d/m/Y', strtotime($dbPropertDetail[0]['post_date']))?>
                       </p>
-                    </div>
+                    </div> -->
                     <div class="col-lg-3 col-6">
                       <?php if(!isset($_SESSION['user']['is_login'])) {?>
                       <div class="heart"><a href="" data-toggle="modal" data-target="#myModal"> <i class="fa fa-heart"></i></a></div>
@@ -1201,6 +1245,18 @@ function sortme(sortval){
 
 }
 
+.custom-tag{
+    background:red;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px 10px;
+    float: left;
+    margin-right: 11px;
+    position: relative;
+}
+
 
 
 .pro-read:hover {
@@ -1431,3 +1487,4 @@ $("#price-max li").click(function(){
 });
 
 </script>
+

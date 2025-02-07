@@ -379,7 +379,30 @@ if(($minrent[1]=='Thousand') && ($maxrent[1]=='Thousand')){
 }
 }
 
-$dbObj->dbQuery.=" order by $sort $page_limit";
+ $dbObj->dbQuery.=" order by $sort $page_limit";
+
+// $dbObj->dbQuery = "SELECT ".PREFIX."com_property.*, ".PREFIX."com_property_detail.custom_tag 
+// FROM ".PREFIX."com_property 
+// LEFT JOIN ".PREFIX."com_property_detail ON ".PREFIX."com_property.id = ".PREFIX."com_property_detail.property_id 
+// WHERE ".PREFIX."com_property.for_property='Sell' 
+// AND ".PREFIX."com_property.status='1' 
+// AND ".PREFIX."com_property.admin_del='0'";
+
+// // Add state and city filters if they are set
+// if (!empty($state)) {
+//     $dbObj->dbQuery .= " AND ".PREFIX."com_property.State='".$state."'";
+// }
+
+// if (!empty($city)) {
+//     $dbObj->dbQuery .= " AND ".PREFIX."com_property.city='".$city."'";
+// }
+
+
+// // Add ORDER BY clause ensuring custom_tag items are at the top while respecting the selected sorting
+// $dbObj->dbQuery .= " ORDER BY 
+//     (CASE WHEN ".PREFIX."com_property_detail.custom_tag IS NOT NULL AND ".PREFIX."com_property_detail.custom_tag != '' THEN 0 ELSE 1 END),
+//     $sort $page_limit";
+
 $dbProperty = $dbObj->SelectQuery();
 $cntH = count((array)$dbProperty);
 
@@ -787,6 +810,11 @@ $dbUser = $dbObj->SelectQuery();
                   0
                   <?php }?>
                 </div>
+                <?php if (!empty($dbPropertDetail[0]['custom_tag'])) { ?>
+                <div class="custom-tag float-left">
+                 <?=$dbPropertDetail[0]['custom_tag']?>
+                </div>
+                <?php } ?> 
                 <div class="for-sell">for SELL</div>
                 <span class="montserrat font-semibold text-blue font-18 float-left">
                 <?php if(!empty($dbPropertDetail[0]['offer_price'])){?>
@@ -810,9 +838,9 @@ $dbUser = $dbObj->SelectQuery();
                 <div class="heart heart2">
                   <div class="row m-0">
                     <div class="col-lg-9 col-6 mt-3 mt-3">
-                      <p> <strong>Post Date:</strong>
+                      <!-- <p> <strong>Post Date:</strong>
                         <?=date('d/m/Y', strtotime($dbPropertDetail[0]['post_date']))?>
-                      </p>
+                      </p> -->
                     </div>
                     <div class="col-lg-3 col-6">
                       <?php if(!isset($_SESSION['user']['is_login'])) {?>
@@ -1281,3 +1309,28 @@ $("#price-max li").click(function(){
 	$('#min-max-price-range1').dropdown('toggle');
 });
 </script>
+
+
+<style>
+	.custom-tag {
+    background: orange;
+    background: red;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    height: 22px;
+    padding: 2px 10px;
+    margin-right: 20px;
+    position: relative;
+} 
+
+.custom-tag:before {
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 5px red;
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+}
+</style>
