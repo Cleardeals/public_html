@@ -192,6 +192,7 @@ if(!empty($property_type)){
 	$dbObj->dbQuery.=" and property_type in(".$serchtype.")";
 }
 
+
 if(!empty($bedrooms) && strlen($bedrooms)>3){
 	$dbObj->dbQuery .=" and id in (select property_id from ".PREFIX."property_detail where no_of_bedrooms in (".$bedrooms."))";
 }
@@ -290,10 +291,24 @@ if(($minrent[1]=='Thousand') && ($maxrent[1]=='Thousand')){
 }
 //echo $dbObj->dbQuery;
 
-$dbObj->dbQuery.=" order by $sort $page_limit";
-$dbProperty = $dbObj->SelectQuery();
-//echo $dbObj->dbQuery;
+ $dbObj->dbQuery.=" order by $sort $page_limit";
 
+//  echo $dbObj->dbQuery;
+
+// $dbObj->dbQuery = "SELECT ".PREFIX."property.*, ".PREFIX."property_detail.custom_tag 
+// FROM ".PREFIX."property 
+// LEFT JOIN ".PREFIX."property_detail ON ".PREFIX."property.id = ".PREFIX."property_detail.property_id 
+// WHERE ".PREFIX."property.for_property='Sell' 
+// AND ".PREFIX."property.status='1' 
+// AND ".PREFIX."property.admin_del='0'";
+
+
+// $dbObj->dbQuery .= " ORDER BY 
+//     (CASE WHEN ".PREFIX."property_detail.custom_tag IS NOT NULL AND ".PREFIX."property_detail.custom_tag != '' THEN 0 ELSE 1 END),
+//     $sort $page_limit";
+
+
+$dbProperty = $dbObj->SelectQuery();
 $cntH = count((array)$dbProperty);
 
 $dbObj->dbQuery="select * from ".PREFIX."state where status='1' order by display_order";
@@ -699,7 +714,15 @@ $dbCity = $dbObj->SelectQuery();
 
 		$propertyName = str_replace(' ','-',$dbProperty[$i]['property_name']);
 
-		$dbObj->dbQuery="select * from ".PREFIX."property_detail where property_id='".$dbProperty[$i]['id']."'";
+$dbObj->dbQuery="select * from ".PREFIX."property_detail where property_id='".$dbProperty[$i]['id']."'";
+
+    // $dbObj->dbQuery = "SELECT * FROM ".PREFIX."property_detail 
+    //                WHERE property_id='".$dbProperty[$i]['id']."'
+    //                ORDER BY 
+    //                CASE WHEN custom_tag IS NOT NULL AND custom_tag <> '' THEN 1 ELSE 2 END, 
+    //                post_date DESC";
+
+
 		$dbPropertDetail = $dbObj->SelectQuery();
 
 		$dbObj->dbQuery="select * from ".PREFIX."property_images where property_id='".$dbProperty[$i]['id']."' and front_status='1'";
@@ -726,8 +749,9 @@ $dbCity = $dbObj->SelectQuery();
                  <?=$dbPropertDetail[0]['custom_tag']?>
                 </div>
                 <?php } ?> 
+      </div>  
       </div>
-        <div class="for-sell float-right mb-2">for Selll</div>
+        <div class="for-sell float-right mb-2">for Sell</div>
         <div class="clearfix"></div>
         <div class="properties-div">
            <?php if(!empty($dbPropertImages[0]['image'])){?>
@@ -810,9 +834,9 @@ $dbCity = $dbObj->SelectQuery();
             <!-- <p> <strong>Post Date:</strong>
               <?=date('d/m/Y', strtotime($dbPropertDetail[0]['post_date']))?>
             </p> -->
-            <p> <strong>Post Date:</strong>
+            <!-- <p> <strong>Post Date:</strong>
              <?= !empty($dbPropertDetail[0]['post_date']) ? date('d/m/Y', strtotime($dbPropertDetail[0]['post_date'])) : ''; ?>
-            </p>
+            </p> -->
 
           </div>
         </div>
@@ -1163,7 +1187,8 @@ $("#price-max li").click(function(){
     color: #fff;
     padding: 2px 10px;
     float: left;
-    margin-right: 11px;
+    /* margin-right: 11px; */
+    margin-left: 14px;
     position: relative;
 }
 </style>

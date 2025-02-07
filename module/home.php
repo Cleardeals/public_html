@@ -3,6 +3,7 @@
 <?php }else{?>
 <?php include(INCLUDE_DIR.'header1.php') ?>
 <?php }?>
+
 <?php
 $dbObj->dbQuery="select * from ".PREFIX."review where home_status='1' and admin_del='0' order by display_order";
 $dbReview = $dbObj->SelectQuery();
@@ -538,6 +539,7 @@ $dbVideo = $dbObj->SelectQuery();
 
 <!-- Your existing home.php content -->
 
+
 <!-- Popup Modal -->
 <div id="homepopupModal" class="home-popup-modal">
     <div class="home-popup-content">
@@ -563,107 +565,32 @@ $(document).ready(function(){
 
 
 
-// script.js or inside a <script> tag in home.php
-
 // $(document).ready(function() {
-//     // Show the popup after the page loads (can add delay if needed)
-//     $('#homepopupModal').fadeIn();
+//     // Show popup instantly
+//     $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
+//     setTimeout(() => {
+//         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
+//     }, 3000);
 
-//     // Close the popup when the close button is clicked
+//     // Close the popup when clicking the close button
 //     $('#homecloseBtn').click(function() {
-//         $('#homepopupModal').fadeOut();
+//         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
 //     });
 
-//     // Close the popup when clicking outside the modal (on the background)
+//     // Close the popup if the user clicks outside of it
 //     $(window).click(function(event) {
 //         if ($(event.target).is('#homepopupModal')) {
-//             $('#homepopupModal').fadeOut();
+//             $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
 //         }
 //     });
 // });
-
-
-$(document).ready(function() {
-    // Show popup instantly
-    $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
-    setTimeout(() => {
-        $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
-    }, 3000);
-
-    // Close the popup when clicking the close button
-    $('#homecloseBtn').click(function() {
-        $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
-    });
-
-    // Close the popup if the user clicks outside of it
-    $(window).click(function(event) {
-        if ($(event.target).is('#homepopupModal')) {
-            $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
-        }
-    });
-});
 
 
 
 </script> 
 
 
- <style> 
- @media(max-width:767px){
-  .home-popup-image {
-    width: 80% !important;
-    height: 52% !important;
-}
- }
-#homepopupModal{
-    opacity: 0; 
-    position: fixed; 
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.5s ease-in-out; 
-}
 
-/* .home-popup-modal {
-    display: none; 
-   
-} */
-
-.home-popup-content {
-    position: relative;
-    /* padding: 20px; */
-    /* background-color: white; */
-    border-radius: 8px;
-    text-align: center;
-    width: 60%;
-    height: 60%;
-}
-
-
-.home-close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000;
-    cursor: pointer;
-}
-
-
-.home-popup-image {
-  width: 80%;
-  height: 100%;
-}
-
-
-</style> 
 
 <!--rangeslider in home page-->
 <!--<script src="<?=HTACCESS_URL?>assets/vendor/rangeslider/rangeslider2.js"></script>-->

@@ -803,6 +803,11 @@ $dbUser = $dbObj->SelectQuery();
           0
           <?php }?>
         </div>
+        <?php if (!empty($dbPropertDetail[0]['custom_tag'])) { ?>
+                <div class="custom-tag float-left">
+                 <?=$dbPropertDetail[0]['custom_tag']?>
+                </div>
+        <?php } ?>
         <div class="for-sell float-right mb-2">for Rent</div>
         <div class="clearfix"></div>
         <div class="properties-div">
@@ -874,9 +879,9 @@ $dbUser = $dbObj->SelectQuery();
             <a data-toggle="modal" data-target="#myModals<?=$dbProperty[$i]['id']?>" class="btn btn-contact mb-2" style="color:#fff;">Contact Us</a>
             <?php }?>
             <div class="clearfix"></div>
-            <p> <strong>Post Date:</strong>
+            <!-- <p> <strong>Post Date:</strong>
               <?=date('d/m/Y', strtotime($dbPropertDetail[0]['post_date']))?>
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
@@ -1253,3 +1258,16 @@ $("#price-max li").click(function(){
 	$('#min-max-price-range1').dropdown('toggle');
 });
 </script>
+
+<style>
+	.custom-tag {
+    background: orange;
+    background: red;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 2px 10px;
+    font-weight: 600;
+    height: 22px;
+    margin-left: 20px;
+} 
+</style>
