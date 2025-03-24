@@ -73,6 +73,8 @@ define('MYSQL_DB_NAME', 'cleardealsconi_newdeals');
 define('MYSQL_DB_USER','cleardealsconi_newdeals');
 define('MYSQL_DB_PWD','2}g]vhoD1z+j');
 
+// AUTH MICROSERVICE URL
+define('AUTH_MICROSERVICE_URL', 'http://127.0.0.1:3000/auth');
 
 if(isset($_SESSION['view_all']) && !empty($_SESSION['view_all'])){
 	define("RECORD_PER_PAGE",$_SESSION['view_all']); // records per page for admin
