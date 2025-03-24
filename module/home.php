@@ -565,31 +565,48 @@ $(document).ready(function(){
 
 
 
-// $(document).ready(function() {
-//     // Show popup instantly
-//     $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
-//     setTimeout(() => {
-//         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
-//     }, 3000);
 
-//     // Close the popup when clicking the close button
-//     $('#homecloseBtn').click(function() {
-//         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
-//     });
+</script> 
 
-//     // Close the popup if the user clicks outside of it
-//     $(window).click(function(event) {
-//         if ($(event.target).is('#homepopupModal')) {
-//             $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
-//         }
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script>
+// $(document).ready(function () {
+//     console.log("Document is ready");
+//     console.log("SidebarCollapse Exists: ", $('#sidebarCollapse').length);
+    
+//     $('#sidebarCollapse').on('click', function () {
+//         console.log("Sidebar button clicked!");
+//         $('#sidebar').toggleClass('active');
+//         $('.overlay').toggleClass('active');
+//         $('.collapse.in').toggleClass('in');
+//         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
 //     });
 // });
 
 
+$(document).ready(function () {
+    console.log("Document is ready");
+    console.log("SidebarCollapse Exists: ", $('#sidebarCollapse').length);
+    console.log("Dismiss Button Exists: ", $('#dismiss').length);
 
-</script> 
+    // Toggle Sidebar on Menu Click
+    $('#sidebarCollapse').on('click', function () {
+        console.log("Sidebar button clicked!");
+        $('#sidebar').toggleClass('active');
+        $('.overlay').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
 
+    // Close Sidebar on Cross Button Click
+    $('#dismiss').on('click', function () {
+        console.log("Dismiss button clicked!");
+        $('#sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+    });
+});
 
+</script>
 
 
 <!--rangeslider in home page-->
@@ -599,7 +616,12 @@ $(document).ready(function(){
 <script src="<?=HTACCESS_URL?>assets/vendor/rangeslider/script.js"></script> -->
 
 <!--rangeslider in home page-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script type="text/javascript">
+
+$(document).ready(function() {
+
 
 var slider = document.getElementById("myRange");
 
@@ -668,6 +690,7 @@ $('#demo').on('input', function(){
   
 });
 
+});
 
 $(document).ready(function() {
     new WOW().init();

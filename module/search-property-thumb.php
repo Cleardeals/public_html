@@ -743,7 +743,6 @@ $dbObj->dbQuery="select * from ".PREFIX."property_detail where property_id='".$d
           0
           <?php }?>
         </div>
-        <!-- <div class="custom_tag"><?php $customTag = isset($yourArray['custom_tag']) ? $yourArray['custom_tag'] : 'no custom' ; ?>  -->
         <?php if (!empty($dbPropertDetail[0]['custom_tag'])) { ?>
                 <div class="custom-tag">
                  <?=$dbPropertDetail[0]['custom_tag']?>
@@ -837,7 +836,7 @@ $dbObj->dbQuery="select * from ".PREFIX."property_detail where property_id='".$d
             <!-- <p> <strong>Post Date:</strong>
              <?= !empty($dbPropertDetail[0]['post_date']) ? date('d/m/Y', strtotime($dbPropertDetail[0]['post_date'])) : ''; ?>
             </p> -->
-
+            
           </div>
         </div>
       </div>
@@ -1179,7 +1178,7 @@ $("#price-max li").click(function(){
 </script>
 
 <style>
-  .custom-tag{
+  .custom-tag {
     background: red;
     text-transform: uppercase;
     font-size: 12px;

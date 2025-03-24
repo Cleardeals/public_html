@@ -4,8 +4,8 @@ session_start();
 function login_check1() {
     if (!isset($_SESSION['is_admin'])) {
         $msg = base64_encode("Please Login");
-        header("Location: /public_html/dealsboard/index.php?mo=login&msg=".$msg);
-        // header("Location: /dealsboard/index.php?mo=login&msg=".$msg);
+        //header("Location: /public_html/dealsboard/index.php?mo=login&msg=".$msg);
+         header("Location: /dealsboard/index.php?mo=login&msg=".$msg);
         exit;
     }
 }

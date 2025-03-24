@@ -260,6 +260,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="<?=HTACCESS_URL?>assets/vendor/jquery/jquery.min.js"></script> 
 <script src="<?=HTACCESS_URL?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 <!-- Plugin JavaScript --> 
 <script src="<?=HTACCESS_URL?>assets/vendor/jquery-easing/jquery.easing.min.js"></script> 
 
@@ -508,12 +512,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>-->
 </body></html>
 
 <!-- Popup Modal -->
-<div id="homepopupModal" class="home-popup-modal">
+<!-- <div id="homepopupModal" class="home-popup-modal">
     <div class="home-popup-content">
         <span id="homecloseBtn" class="home-close-btn">&times;</span>
         <img src="<?=HTACCESS_URL?>assets/img/popup-home.png" alt="Popup Image" class="home-popup-image">
     </div>
+</div>  -->
+
+
+<!-- Popup Modal -->
+<div id="homepopupModal" class="home-popup-modal">
+    <div class="home-popup-content">
+        <span id="homecloseBtn" class="home-close-btn">&times;</span>
+        <!-- Added `data-mobile-src` for mobile image -->
+        <img src="<?=HTACCESS_URL?>assets/img/popup-home.png" 
+             alt="Popup Image" 
+             class="home-popup-image d-none d-md-block d-lg-block">
+        
+        <!-- Mobile Image (Hidden on Desktop) -->
+        <img src="<?=HTACCESS_URL?>assets/img/popup-mobile.png" 
+             alt="Popup Image" 
+             class="home-popup-image d-md-none d-lg-none d-block">
+    </div>
 </div>
+
+<!-- <div id="homepopupModal" class="home-popup-modal d-md-none d-lg-none d-block">
+    <div class="home-popup-content">
+        <span id="homecloseBtn" class="home-close-btn">&times;</span>
+        <img id="homePopupImage" 
+             src="<?=HTACCESS_URL?>assets/img/popup-mobile.png" 
+             alt="Popup Image" 
+             class="home-popup-image">
+    </div>
+</div> -->
+
+<!-- <div id="homepopupModal" class="home-popup-modal">
+    <div class="home-popup-content">
+        <span id="homecloseBtn" class="home-close-btn">&times;</span>
+       
+        <img id="homePopupImage" 
+             src="<?=HTACCESS_URL?>assets/img/popup-home.png" 
+             data-mobile-src="<?=HTACCESS_URL?>assets/img/popup-mobile.png"
+             alt="Popup Image" 
+             class="home-popup-image">
+    </div>
+</div> -->
 
 
 <!-- Include jQuery (if not already included) -->
@@ -524,37 +567,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>-->
 
 <script>
 
-// $(document).ready(function() {
-//     // Show popup instantly
-//     $('#homepopupModal').css({ "visibility": "visible", "opacity": "1" });
-//     setTimeout(() => {
-//         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
-//     }, 5000);
-
-//     // Close the popup when clicking the close button
-//     $('#homecloseBtn').click(function() {
-//         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
-//     });
-
-//     // Close the popup if the user clicks outside of it
-//     $(window).click(function(event) {
-//         if ($(event.target).is('#homepopupModal')) {
-//             $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0" });
-//         }
-//     });
-
-//     $("#homecloseBtn").click(function() {
-//         $("#homepopupModal").css({ "visibility": "hidden", "opacity": "0" });
-//     });
-// });
-
-
-
 $(document).ready(function() {
+    // Function to switch image based on screen size
+    // function updatePopupImage() {
+    //     let imgElement = $("#homePopupImage");
+    //     let mobileSrc = imgElement.attr("data-mobile-src");
+    //     let desktopSrc = "<?=HTACCESS_URL?>assets/img/popup-home.png"; // Desktop image
+        
+    //     if ($(window).width() <= 767) {
+    //         imgElement.attr("src", mobileSrc);  // Set mobile image
+    //     } else {
+    //         imgElement.attr("src", desktopSrc); // Set desktop image
+    //     }
+    // }
+
+    // Call the function on page load and on window resize
+    // updatePopupImage();
+    // $(window).resize(updatePopupImage);
+
     // Show popup instantly
     $('#homepopupModal').css({ "visibility": "visible", "opacity": "1", "pointer-events": "auto" });
 
-    // Auto-hide after 5 seconds
+    //Auto-hide after 5 seconds
     setTimeout(() => {
         $('#homepopupModal').css({ "visibility": "hidden", "opacity": "0", "pointer-events": "none" });
     }, 5000);
@@ -574,27 +608,33 @@ $(document).ready(function() {
 });
 
 
-
-   
-
-
-
-
 </script> 
 
+<style> 
+@media (max-width: 767px) {
+  .home-popup-content .home-popup-image {
+        width: 80% !important;
+        height: auto !important;
+    }
 
- <style> 
- @media(max-width:767px){
-  .home-popup-image {
-    width: 80% !important;
-    height: 52% !important;
+  .home-popup-content {
+    width: 100% !important;
+    height: 70% !important;
 }
- }
-#homepopupModal{
+
+.home-close-btn {
+    position: absolute;
+    font-size: 25px !important;
+    width: 30px !important;
+    height: 30px !important;
+    right: 7% !important;
+}
+}
+#homepopupModal {
     opacity: 0;
-    visibility: hidden;  /* Hidden by default */
+    visibility: hidden;
     position: fixed;
-    z-index: 1000;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
@@ -603,66 +643,43 @@ $(document).ready(function() {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Delay visibility change */
-    pointer-events: none;  /* Disable interactions when hidden */
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+    pointer-events: none;
 }
-
 
 .home-popup-content {
     position: relative;
     border-radius: 8px;
-    text-align: center;
-    width: 60%;
-    height: 60%;
+    text-align: -webkit-center;
+    width: 100% !important;
+    height: auto !important;
 }
-
-
-/* .home-close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000;
-    cursor: pointer;
-} */
-
 
 .home-popup-image {
-  width: 80%;
-  height: 100%;
-}
+        width: 60% !important;
+        height: auto !important;
+    }
 
-#homepopupModal.visible {
-    opacity: 1;
-    visibility: visible; /* Make the modal visible */
-    pointer-events: auto;  /* Enable interactions */
-}
-
-.home-close-btn {
+    .home-close-btn {
     position: absolute;
-    top: 0px;  /* Moved inside modal */
-    right: 30px;
-    font-size: 25px;
+    top: -2%;
+    right: 19%;
+    font-size: 38px;
     font-weight: bold;
     color: white;
     background: black;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-    z-index: 1001; /* Ensure it's above the modal */
+    z-index: 1001;
 }
 
 .home-close-btn:hover {
-    background: red; /* Red hover effect */
+    background: red;
 }
-
-
-
-
-</style> 
+</style>

@@ -54,7 +54,7 @@ $dbSettings = $dbObj->SelectQuery();
           <?php }else{?>
           <a class="nav-link sign-up call-bt-neww pl-1 pr-1" style="color:#fff!important;"href="<?=HTACCESS_URL?>dashboard/" target="_blank"> <i class="fa fa-home themecolor font-15" aria-hidden="true"></i> Dashboard </a>
           <?php }?>
-          <button type="button" id="sidebarCollapse" class="btn btn-info font-14 font-bold themebg text-uppercase border-0"> <i class="fa fa-align-left"></i> <span>Menu</span> </button>
+          <button type="button" id="sidebarCollapse" class="btn btn-info font-14 font-bold themebg text-uppercase border-0"> <i class="fa fa-align-left"></i> <span>Menu1</span> </button>
         </div>
       </div>
     </div>

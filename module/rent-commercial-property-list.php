@@ -822,6 +822,11 @@ $dbUser = $dbObj->SelectQuery();
                   0
                   <?php }?>
                 </div>
+                <?php if (!empty($dbPropertDetail[0]['custom_tag'])) { ?>
+                <div class="custom-tag float-left">
+                 <?=$dbPropertDetail[0]['custom_tag']?>
+                </div>
+                 <?php } ?>
                 <div class="for-sell">for Rent</div>
                 <span class="montserrat font-semibold text-blue font-18 float-left">
                 <?php if(!empty($dbPropertDetail[0]['expected_rent'])){?>
@@ -1309,3 +1314,27 @@ $("#price-max li").click(function(){
 	$('#min-max-price-range1').dropdown('toggle');
 });
 </script>
+
+<style>
+	.custom-tag {
+    background: orange;
+    background: red;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    height: 22px;
+    padding: 2px 10px;
+    margin-right: 20px;
+    position: relative;
+} 
+
+.custom-tag:before {
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 5px red;
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+}
+</style>

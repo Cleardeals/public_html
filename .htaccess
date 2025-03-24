@@ -10,16 +10,49 @@ RewriteEngine On
 
 </IfModule>
 
-RewriteBase /
+RewriteBase /public_html/
 
 
 
-RewriteRule ^dealsboard/$ dealsboard/index.php [L]
+ RewriteRule ^dealsboard/$ dealsboard/index.php [L]
+
+
+# Block access to all files inside /cms_images/ except images
+# RewriteCond %{REQUEST_URI} ^/cms_images/ [NC]
+# RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|webp|svg|ico)$ [NC]
+# RewriteRule .* - [R=404,L]
+
+
+# Block all non-image files in /assets/img/
+# RewriteCond %{REQUEST_URI} ^/public_html/assets/img/ [NC]
+# RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|webp|svg|ico)$ [NC]
+#  RewriteRule .* - [R=404,L]
+
+# Block direct access to the /cms_images/ folder and its subfolders
+ RewriteCond %{REQUEST_URI} ^/cms_images/$ [NC,OR]
+ RewriteCond %{REQUEST_URI} ^/cms_images/[^/]+/$ [NC]
+ RewriteRule .* - [R=404,L]
+
+
+# Block direct access to the /cms_images/ folder and its subfolders
+ RewriteCond %{REQUEST_URI} ^/public_html/assets/$ [NC,OR]
+ RewriteCond %{REQUEST_URI} ^/public_html/assets/[^/]+/$ [NC]
+ RewriteRule .* - [R=404,L]
+
+
+# Restrict access to sensitive folders unless logged in as admin
+# RewriteCond %{REQUEST_URI} ^/(career|chat_attachment|excel|payment_receipt|progress_report|property|property_excel|user_excel) [NC]
+# RewriteRule .* /dealsboard/index.php [L]
+RewriteCond %{REQUEST_URI} ^/(career|chat_attachment|excel|payment_receipt|progress_report|property|property_excel|user_excel)($|/.*$) [NC]
+RewriteRule .* /admin_folder_check.php [L]
 
 
 
-
-
+# Restrict access to sensitive folders unless logged in as admin
+# Redirect all requests to the /classes folder to admin_folder_check.php
+# RewriteCond %{REQUEST_URI} ^/public_html/classes($|/.*$) [NC]
+RewriteCond %{REQUEST_URI} ^/public_html/(classes|calc|fpdf)($|/.*$) [NC]
+RewriteRule .* /public_html/admin_folder_check.php [L]
 
 
 RewriteRule ^$ index.php?mo=home&id=1 [L]
