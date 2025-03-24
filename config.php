@@ -4,31 +4,38 @@
 
 @date_default_timezone_set('Asia/Calcutta');
 
-if(!$_SERVER["HTTPS"]){
-	$host = $_SERVER['HTTP_HOST'];
-	header("Location:https://".$host);
-}
+// if(!$_SERVER["HTTPS"]){
+// 	$host = $_SERVER['HTTP_HOST'];
+// 	header("Location:https://".$host);
+// }
 
 
-if($_SERVER["HTTPS"]){
-	$host = $_SERVER['HTTP_HOST'];
-	$host1 = explode(".",$host);
-	if($host1[0]!='www'){
-		$host = "www.".$host;
-		$page = $_SERVER['PHP_SELF'];
-		header("Location:http://".$host);
-	}	
-}
+// if($_SERVER["HTTPS"]){
+// 	$host = $_SERVER['HTTP_HOST'];
+// 	$host1 = explode(".",$host);
+// 	if($host1[0]!='www'){
+// 		$host = "www.".$host;
+// 		$page = $_SERVER['PHP_SELF'];
+// 		header("Location:http://".$host);
+// 	}	
+// }
 
 // Set url constant
-define('SITE_URL', 'https://www.cleardeals.co.in');
+// define('SITE_URL', 'https://www.cleardeals.co.in');
+define('SITE_URL', 'http://localhost/public_html');
 define('SITE_NAME', 'Cleardeal');
 define('LINK', SITE_URL.'/');
 define('HTACCESS_URL', SITE_URL.'/');//For htaccess
 
 
 // Set folder constant
-define('ROOT_DIR', $_SERVER['DOCUMENT_ROOT'].'/');///kunden/homepages/12/d202029888/htdocs/ 
+if ($_SERVER['HTTP_HOST'] == 'localhost') {
+    define('ROOT_DIR', 'C:/xampp/htdocs/public_html/');
+} else {
+    define('ROOT_DIR', $_SERVER['DOCUMENT_ROOT'].'/');
+}
+// define('ROOT_DIR', $_SERVER['DOCUMENT_ROOT'].'/');
+///kunden/homepages/12/d202029888/htdocs/ 
 define('EDITOR_JS_DIR', HTACCESS_URL.'cms_js/editor/');
 define('EDITOR_DIR', ROOT_DIR.'cms_js/editor/');
 define('CLASS_DIR', ROOT_DIR.'classes/');
@@ -70,8 +77,15 @@ define('APP_ID','960196f647795e3d6a854ebc291069');
 // MYSQL Database Related
 define('MYSQL_DB_SERVER','localhost');
 define('MYSQL_DB_NAME', 'cleardealsconi_newdeals');
-define('MYSQL_DB_USER','cleardealsconi_newdeals');
-define('MYSQL_DB_PWD','2}g]vhoD1z+j');
+// define('MYSQL_DB_USER','cleardealsconi_newdeals');
+define('MYSQL_DB_USER','root');
+define('MYSQL_DB_PWD','');
+// define('MYSQL_DB_PWD','2}g]vhoD1z+j');
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8mb4' );
+
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
 
 
 if(isset($_SESSION['view_all']) && !empty($_SESSION['view_all'])){
