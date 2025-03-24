@@ -87,6 +87,8 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+// AUTH MICROSERVICE URL
+define('AUTH_MICROSERVICE_URL', 'http://127.0.0.1:3000/auth');
 
 if(isset($_SESSION['view_all']) && !empty($_SESSION['view_all'])){
 	define("RECORD_PER_PAGE",$_SESSION['view_all']); // records per page for admin

@@ -28,51 +28,43 @@ if($mode=='logout'){
     exit;
 }
 
+// Read API Base URL from environment variables
+$apiBaseUrl = AUTH_MICROSERVICE_URL ?? "http://127.0.0.1:3000/auth"; 
+
 //LOGIN MODULE
 if($mode=="login_step1"){ 
     $name = $dbObj->sc_mysql_escape($_POST['username'] ?? "");
     
-    $dbObj->dbQuery="select * from ".PREFIX."adminuser where username='".$name."'";
-    $dbResult = $dbObj->SelectQuery();
+    // Prepare the request payload
+    $postData = json_encode(["username" => $name]);
+
+    // Initialize cURL
+    $ch = curl_init("$apiBaseUrl/send-otp");
     
-    if(count((array)$dbResult) > 0){
-        // Setting fixed OTP
-        $otp = 'Clear$Deals@1B$@1587';
-        $_SESSION['adminLogin']['otp'] = $otp;
-        $_SESSION['adminLogin']['mobile_no'] = $dbResult[0]['contact_no'];
-        $_SESSION['adminLogin']['email'] = $dbResult[0]['email'];
-        
-        include('mobileAPI.php');
-        
-        $to = "".$dbResult[0]['full_name']." <".$dbResult[0]['email'].">";
-        $subject = "Login Otp";  
-        $message = '<table cellpadding="5" cellspacing="0" width="500px">
-            <tr>
-                <td><font face="Verdana" style="font-size:12px"> <b>Hello '.$dbResult[0]['full_name'].',</b></font></td>
-            </tr>
-            <tr>
-                <td><font face="Verdana" style="font-size:12px"> Your otp is '.$_SESSION['adminLogin']['otp'].'.</font></td>
-            </tr>
-            <tr>
-                <td><br />
-                    <font face="Verdana" style="font-size:12px" color="#0B1D24"> <b>Regards,<br>
-                    <font face="Verdana" style="font-size:12px" color="#0B1D24"> Cleardeals.co.in</font></b> </font></td>
-            </tr>
-        </table>';
-        
-        $header = "From:Cleardeals <contact@cleardeals.co.in> \r
-";  
-        $header .= "MIME-Version: 1.0 \r
-";  
-        $header .= "Content-type: text/html;charset=UTF-8 \r
-";  
-        
-        // Send email
-        $result = mail($to, $subject, $message, $header);
-        
-        $msg = base64_encode("Your otp has been sent to your email.");
-        header('location:index.php?mo=login-otp&msg='.$msg);
-        exit;    
+    // Set cURL options
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        "Content-Type: application/json"
+    ]);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+
+    // Execute the request
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+    // Close cURL session
+    curl_close($ch);
+
+    // Handle response
+    if ($httpCode === 200 && isset($responseData['success']) && $responseData['success'] === true) {
+        $msg = base64_encode("OTP request sent successfully.");
+        header("location:index.php?mo=login-otp&msg=" . $msg);
+        exit;
+    } else {
+        $msg = base64_encode("Failed to send OTP. Please try again.");
+        header("location:index.php?mo=login-otp&msg=" . $msg);
+        exit;
     } else {
         $msg = base64_encode("Invalid Username....");
         header('location:index.php?mo=login&msg='.$msg);
@@ -84,27 +76,47 @@ if($mode=="login_step1"){
 if($mode=="login"){ 
     $otp = $dbObj->sc_mysql_escape($_POST['otp'] ?? "");
 
-    $dbObj->dbQuery="select * from ".PREFIX."adminuser where contact_no='".$_SESSION['adminLogin']['mobile_no']."' and email='".$_SESSION['adminLogin']['email']."'";
-    $dbResult = $dbObj->SelectQuery();
+    // Prepare the request payload
+    $postData = json_encode(["otp" => $otp]);
 
-    if($otp==$_SESSION['adminLogin']['otp']){ // Check if the OTP matches
+    // Initialize cURL
+    $ch = curl_init("$apiBaseUrl/verify-otp");
+
+    // Set cURL options
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        "Content-Type: application/json"
+    ]);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+
+    // Execute the request
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $responseData = json_decode($response, true); // Decode JSON response
+
+    // Close cURL session
+    curl_close($ch);
+
+    // Handle response
+    if ($httpCode === 200 && isset($responseData['success']) && $responseData['success'] === true) {
         $_SESSION['is_admin'] = 1;
-        $_SESSION['admin_user_name'] = $dbResult[0]['username'];
-        $_SESSION['srgit_cms_admin_id'] = $dbResult[0]['id'];
+        $_SESSION['admin_user_name'] = $responseData['user']['username'];
+        $_SESSION['srgit_cms_admin_id'] = $responseData['user']['id'];
 
-        $access = explode(',', $dbResult[0]['privilege'] ?? "");
+        $access = explode(',', $responseData['user']['privilege'] ?? "");
         foreach ($access as $privilege) {
-            if(!empty($privilege)){
+            if (!empty($privilege)) {
                 $_SESSION[$privilege] = 'Y';
             }
         }
 
         unset($_SESSION['adminLogin']);
         header('location:index.php?mo=dashboard');
-        exit;    
+        exit;
     } else {
-        $msg = base64_encode("Invalid Otp....");
-        header('location:index.php?mo=login-otp&msg='.$msg);
+        $msg = base64_encode("Invalid OTP...");
+        header('location:index.php?mo=login-otp&msg=' . $msg);
         exit;
     }
 }
