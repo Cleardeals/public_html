@@ -1,34 +1,12 @@
 <?php
 ob_start();
-// Check if a session ID exists in the cookie and restore it
-if (isset($_COOKIE['PHPSESSID'])) {
-    session_id($_COOKIE['PHPSESSID']); // Use existing session ID
-}
-// Set session parameters
-session_set_cookie_params([
-    'lifetime' => 86400, // 1 day
-    'path' => '/',
-    'domain' => "127.0.0.1", // Change to actual domain in production
-    'secure' => false, // Set `true` if using HTTPS
-    'httponly' => true,
-    'samesite' => 'Lax'
-]);
-session_start();
-// Ensure session ID is stored in a cookie to persist across requests
-setcookie("PHPSESSID", session_id(), [
-    'expires' => time() + 86400, // 1-day expiration
-    'path' => '/',
-    'domain' => "127.0.0.1", // Change to actual domain in production
-    'secure' => false, // Set to `true` if using HTTPS
-    'httponly' => true,
-    'samesite' => 'Lax'
-]);
+require_once 'session_config.php'; // Ensure the session is consistent
 require_once('../config.php'); // config file
-require_once(MYSQL_CLASS_DIR . 'DBConnection.php'); // file to make database connection
-require_once(PHP_FUNCTION_DIR . 'function.database.php'); // file to access predefined PHP functions
-include(PHP_FUNCTION_DIR . "module_functions.php"); // to use user-defined functions like execute query
-include(PHP_FUNCTION_DIR . "server_side_validation.php"); // to use user-defined functions
-require_once(PHP_FUNCTION_DIR . 'class.phpmailer.php'); // to send mail
+require_once(MYSQL_CLASS_DIR . 'DBConnection.php'); // Database connection
+require_once(PHP_FUNCTION_DIR . 'function.database.php'); // Predefined PHP functions
+include(PHP_FUNCTION_DIR . "module_functions.php"); // User-defined functions (like execute query)
+include(PHP_FUNCTION_DIR . "server_side_validation.php"); // Validation functions
+require_once(PHP_FUNCTION_DIR . 'class.phpmailer.php'); // To send mail
 $dbObj = new DBConnection();
 $mode = $_REQUEST['mode'] ?? "";
 $link = $dbObj->sc_mysql_escape($_REQUEST['link'] ?? "");
@@ -45,48 +23,94 @@ if ($mode == 'logout') {
     exit;
 }
 $apiBaseUrl = AUTH_MICROSERVICE_URL ?? "http://127.0.0.1:3000/auth";
-$sessionId = session_id();
 if ($mode == "login_step1") {
     $name = $dbObj->sc_mysql_escape($_POST['username'] ?? "");
     $postData = json_encode(["username" => $name]);
+
+    // Get the current session cookie
+    $cookies = [];
+    foreach ($_COOKIE as $key => $value) {
+        $cookies[] = "$key=$value";
+    }
+    $cookieString = implode('; ', $cookies);
+
+    // cURL request to send OTP
     $ch = curl_init("$apiBaseUrl/send-otp");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
         "Content-Type: application/json",
-        "Cookie: PHPSESSID=$sessionId"
+        "Cookie: $cookieString"
     ]);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+    curl_setopt($ch, CURLOPT_COOKIEJAR, 'cookie.txt');  // Save cookies to file
+    curl_setopt($ch, CURLOPT_COOKIEFILE, 'cookie.txt');  // Load cookies from file
+
     $response = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    $responseData = json_decode($response, true); // Decode JSON response
+    $responseData = json_decode($response, true);
     curl_close($ch);
+
+    // Log the response for debugging
+    error_log("Send OTP Response - HTTP Code: $httpCode, Response: " . json_encode($responseData, JSON_PRETTY_PRINT));
+
     if ($httpCode === 200 && isset($responseData['success']) && $responseData['success'] === true) {
         $msg = base64_encode("OTP request sent successfully.");
         header("location:index.php?mo=login-otp&msg=" . $msg);
         exit;
     } else {
-        $msg = base64_encode("Failed to send OTP. Please try again.");
-        header("location:index.php?mo=login-otp&msg=" . $msg);
+        // Get the error message from the response if available
+        $errorMessage = $responseData['message'] ?? "Failed to send OTP. Please try again.";
+        $msg = base64_encode($errorMessage);
+        header("location:index.php?mo=login&msg=" . $msg);
         exit;
     }
 }
 if ($mode == "login") {
     $otp = $dbObj->sc_mysql_escape($_POST['otp'] ?? "");
     $postData = json_encode(["otp" => $otp]);
+
+    // Log the request details
+    error_log("OTP Verification Request - OTP: $otp, PostData: $postData");
+
+    // Get the current session cookie
+    $cookies = [];
+    foreach ($_COOKIE as $key => $value) {
+        $cookies[] = "$key=$value";
+    }
+    $cookieString = implode('; ', $cookies);
+
+    // cURL request to verify OTP
     $ch = curl_init("$apiBaseUrl/verify-otp");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
         "Content-Type: application/json",
-        "Cookie: PHPSESSID=$sessionId"
+        "Cookie: $cookieString"
     ]);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+    curl_setopt($ch, CURLOPT_COOKIEJAR, 'cookie.txt');  // Save cookies to file
+    curl_setopt($ch, CURLOPT_COOKIEFILE, 'cookie.txt');  // Load cookies from file
+
+    // Add error handling for curl
+    if (curl_errno($ch)) {
+        error_log("Curl Error: " . curl_error($ch));
+        $msg = base64_encode("Connection error occurred. Please try again.");
+        header('location:index.php?mo=login-otp&msg=' . $msg);
+        exit;
+    }
+
     $response = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    $responseData = json_decode($response, true); 
+    $responseData = json_decode($response, true);
     curl_close($ch);
-    error_log("OTP Verification: HTTP Code: $httpCode, Response: " . json_encode($responseData, JSON_PRETTY_PRINT));
+
+    // Enhanced logging
+    error_log("OTP Verification Details:");
+    error_log("HTTP Code: $httpCode");
+    error_log("Raw Response: $response");
+    error_log("Decoded Response: " . json_encode($responseData, JSON_PRETTY_PRINT));
+
     if ($httpCode === 200 && isset($responseData['success']) && $responseData['success'] === true) {
         $_SESSION['is_admin'] = 1;
         $_SESSION['admin_user_name'] = $responseData['user']['username'];
